@@ -1,0 +1,65 @@
+#!/bin/bash
+# diff info script
+
+# this scripts parses the gharchive output results
+# and gets more info on the diffs
+filename="gharchive-output-nullderefs2.json"
+lst=$(python ~/diff_info.py "$filename")
+
+IFS=')(][' read -r -a array <<< "$lst"
+for x in "${array[@]}"
+do
+  cd ~
+  IFS=" "
+  set -- ${x//[,)(\'\[\]]}
+
+  # split results to get repo url, fixed commit hash, buggy commit hash
+  repo_url=$1
+  repo_name=$2
+  fixed_commit=$3
+  buggy_commit=$4
+  echo $repo_url
+  echo $repo_name
+  echo $fixed_commit
+  echo $buggy_commit
+  git clone $repo_url
+  cd $repo_name
+  res=$(git diff --numstat $fixed_commit $buggy_commit)
+  echo $res
+  IFS=$'\t\n'
+  set -- ${res//[,)(\'\[\]]}
+  echo $#
+  insertions=0
+  deletions=0
+  files_changed=""
+  while [ "$1" != "" ]; do
+    ins=$1
+    dels=$2
+    fils=$3
+    echo $ins
+    echo $dels
+    echo $fils
+    ((insertions+=ins))
+    ((deletions+=dels))
+    if [ "$files_changed" != "" ]
+    then
+      files_changed="$files_changed, $fils"
+    else
+      files_changed="{$fils"
+    fi
+    shift
+    shift
+    shift
+  done
+  files_changed="$files_changed}"
+  echo $files_changed
+  echo $insertions
+  echo $deletions
+  csv_str="$repo_name, $repo_url, $fixed_commit, $buggy_commit, $insertions, $deletions, $files_changed"
+  echo $repo_name
+  if [ "$repo_name" != "" ]
+  then
+    echo $csv_str
+    echo $csv_str >> ~/diff_results.csv
+  fi
+done

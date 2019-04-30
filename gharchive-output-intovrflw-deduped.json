@@ -1,0 +1,2648 @@
+[
+  {
+    "repo_url": "https://github.com/ahmedradaideh/OnePlus3T.git",
+    "repo_name": "OnePlus3T",
+    "fixed_hash": "2752b448a4965da64a360c3abf9d265c1b3e4096",
+    "buggy_hash": "010b50a7e800b01438fd0f2647966501d90a0d8d",
+    "commit_msg": "netfilter: x_tables: check for size overflow  Ben Hawkes says:  integer overflow in xt_alloc_table_info which on 32-bit systems can  lead to small structure allocation and a copy_from_user based heap  corruption.  Change-Id: I13c554c630651a37e3f6a195e9a5f40cddcb29a1 Reported-by: Ben Hawkes <hawkes@google.com> Signed-off-by: Florian Westphal <fw@strlen.de> Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org> "
+  },
+  {
+    "repo_url": "https://github.com/BenzoRoms/kernel_huawei_angler.git",
+    "repo_name": "kernel_huawei_angler",
+    "fixed_hash": "de460676e94179d1bb5cdec2a74d84551e42a1c7",
+    "buggy_hash": "012e82d51fc5e2c9fbee181d0050b146b2f60e45",
+    "commit_msg": "msm: mdss: Fix integer overflow in cursor validaton  The calculation of cursor image size has a potential integer overflow issue. Modifing the validation logic to avoid overflow.  Change-Id: If21eff9623d71e11d116741de3a349a95dbc54bd Signed-off-by: Rajkumar Subbiah <rsubbia@codeaurora.org> Signed-off-by: mydongistiny <jaysonedson@gmail.com>"
+  },
+  {
+    "repo_url": "https://github.com/liquidmetal/opencv.git",
+    "repo_name": "opencv",
+    "fixed_hash": "0f387cda8f8b42c4db458ce3f8db5f2f81ccddf4",
+    "buggy_hash": "016359f406a9f9c246137ba4a6c9978c61079760",
+    "commit_msg": "Merge pull request #7451 from reunanen:issue-7409  Fix findContours crash for very large images"
+  },
+  {
+    "repo_url": "https://github.com/hyperUnicorns/lightning-kernel-bacon.git",
+    "repo_name": "lightning-kernel-bacon",
+    "fixed_hash": "f136b88a68c4256c47a8389312d8901db6cac5ff",
+    "buggy_hash": "019a7ff23f9c19bceb031ee17eb4300c5e31f745",
+    "commit_msg": "ext4: fix potential integer overflow  commit 46901760b46064964b41015d00c140c83aa05bcf upstream.  Since sizeof"
+  },
+  {
+    "repo_url": "https://github.com/RahifM/android_kernel_motorola_msm8226.git",
+    "repo_name": "android_kernel_motorola_msm8226",
+    "fixed_hash": "ea0b06ff179f0f94129e9eab860f2a6a3b1434e0",
+    "buggy_hash": "0384f3c687ba966d64d68dd336814d271c5529e4",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Jackeagle/kernel_msm-3.10.git",
+    "repo_name": "kernel_msm-3.10",
+    "fixed_hash": "cc2f8ead3f55f3fde7f3fcb1d5309e43425e4d9b",
+    "buggy_hash": "04d24095ed31e0bbc8b34e0852472685a010ca24",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/kdave/btrfs-devel.git",
+    "repo_name": "btrfs-devel",
+    "fixed_hash": "4430872ecc4988fc7f2910426e9be39c9e9d4cb6",
+    "buggy_hash": "0548740e53e6fe674f850d36db51eccb0557d938",
+    "commit_msg": "Btrfs: fix an integer overflow check  This isn  super serious because you need CAP_ADMIN to run this code.  I added this integer overflow check last year but apparently I am rubbish at writing integer overflow checks... There are two issues. First access_ok"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "12a4c3b7e738b74c5ccac4bf9f4d90b5161abe7c",
+    "buggy_hash": "05fede7ee9d7970fe5ff176c5d51fdf52c4d95b6",
+    "commit_msg": "Merge msm: mdss: Fix possible integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/torvalds/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "1a589c0443e498078f5f2acedef5575bc705dcd7",
+    "buggy_hash": "08e4e0d0456d0ca8427b2d1ddffa30f1c3e774d7",
+    "commit_msg": "Merge tag drm-fixes-for-v4.11-rc6 of git://people.freedesktop.org/~airlied/linux  Pull drm fixes from Dave Airlie:  This is just mostly stuff that missed rc5 from vmwgfx and msm  drivers  * tag drm-fixes-for-v4.11-rc6 of git://people.freedesktop.org/~airlied/linux:  drm/msm: Make sure to detach the MMU during GPU cleanup  drm/msm/hdmi: redefinitions of macros not required  drm/msm/mdp5: Update SSPP_MAX value  drm/msm/dsi: Fix bug in dsi_mgr_phy_enable  drm/msm: Don  allow zero sized buffer objects  drm/msm: Fix wrong pointer check in a5xx_destroy  drm/msm: adreno: fix build error without debugfs  drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/kdave/kernel-source.git",
+    "repo_name": "kernel-source",
+    "fixed_hash": "8c4cd718b44ea42b4bf8080433ecc76366e4b87e",
+    "buggy_hash": "09d70aabd72568c9d0259261e0c6e9fa60c529f3",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/web-push-libs/ecec.git",
+    "repo_name": "ecec",
+    "fixed_hash": "fdca6544a5e15aea608559891d70893a0757fc55",
+    "buggy_hash": "09ebf7a39974884c3756196a397219965b5d2df8",
+    "commit_msg": "Fix integer overflows in chunking bounds checks."
+  },
+  {
+    "repo_url": "https://github.com/sainath24/android_kernel_motorola_msm8916.git",
+    "repo_name": "android_kernel_motorola_msm8916",
+    "fixed_hash": "6edb0291e95122015df2a3e3f48067bc6aebc9db",
+    "buggy_hash": "09ff0d103db0910e45887f63b93712599ef1fb46",
+    "commit_msg": "KEYS: Fix ASN.1 indefinite length object parsing  This fixes CVE-2016-0758.  In the ASN.1 decoder when the length field of an ASN.1 value is extracted it isnt validated against the remaining amount of data before being added to the cursor. With a sufficiently large size indicated the check:   datalen - dp < 2  may then fail due to integer overflow.  Fix this by checking the length indicated against the amount of remaining data in both places a definite length is determined.  Whilst were at it make the following changes:  "
+  },
+  {
+    "repo_url": "https://github.com/levitte/openssl.git",
+    "repo_name": "openssl",
+    "fixed_hash": "bbef551b2cf3d98b89adb24352de78eb8cc4bd39",
+    "buggy_hash": "0be2cc5eb3faa2c79a705fee5977fa49841c1799",
+    "commit_msg": "Fix a possible integer overflow in long_c2i  Credit to OSS-Fuzz for finding this."
+  },
+  {
+    "repo_url": "https://github.com/lion328/ThaiFixes.git",
+    "repo_name": "ThaiFixes",
+    "fixed_hash": "85145d13dbed50954f56c5378daec1a76eccae0b",
+    "buggy_hash": "0c7e71eaffed4b71cd9e5393d30b18f449bd4ffe",
+    "commit_msg": "Fix integer overflow in UnicodeFontRenderer"
+  },
+  {
+    "repo_url": "https://github.com/fsateler/systemd.git",
+    "repo_name": "systemd",
+    "fixed_hash": "6f94e420e8355421fc31713a0df760d6b20473ac",
+    "buggy_hash": "0e7d3682637e12e419c5a05b4bfa4d763fe6c3b8",
+    "commit_msg": "journal: prevent integer overflow while validating header"
+  },
+  {
+    "repo_url": "https://github.com/codeaurora-unofficial/kernel-msm.git",
+    "repo_name": "kernel-msm",
+    "fixed_hash": "5be13fab6630275fc46c232780c3f764909f6a3e",
+    "buggy_hash": "0fb31c85dc7133ffec273c5505cce7e28bdb23f5",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/chain/chain.git",
+    "repo_name": "chain",
+    "fixed_hash": "507967a3741a68a4da8f18a68d22383c4579e730",
+    "buggy_hash": "0fbf8dcbe135edf42622d2fec467049fc4796556",
+    "commit_msg": "protocol/vm: prevent integer overflow in PUSHDATA4  Since OP_PUSHDATA4 takes a 32-bit integer for its length calculating\r the length of the instruction may overflow. Use checked addition when\r calculating the length of the instruction. The other PUSHDATA opcodes\r should be okay because they only parse 16-bit or less integers.\r \r Fix #1008.  Closes #1009"
+  },
+  {
+    "repo_url": "https://github.com/laochailan/taisei.git",
+    "repo_name": "taisei",
+    "fixed_hash": "27d94a2d92f9654558fd63965b773bbf3c6b571a",
+    "buggy_hash": "10b86bcd3c53e77b4dde882d473a7173dfd28c44",
+    "commit_msg": "fix some signed integer overflow errors"
+  },
+  {
+    "repo_url": "https://github.com/glennrp/libpng.git",
+    "repo_name": "libpng",
+    "fixed_hash": "53f22aed41a1cb0d2d23e8085c718b0601384640",
+    "buggy_hash": "13370c536c3b9f2e9f6e1cf626cad2dceaf2b8c5",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/esnet/iperf.git",
+    "repo_name": "iperf",
+    "fixed_hash": "b9478db94730c7bf1f4aa02091fbc425b9149a86",
+    "buggy_hash": "13ff67e5824828c917be95b83e8c96bc2ea72b19",
+    "commit_msg": "Fix a problem when getting snd_cwnd on FreeBSD.  On FreeBSD unlike Linux"
+  },
+  {
+    "repo_url": "https://github.com/abeimler/creature.git",
+    "repo_name": "creature",
+    "fixed_hash": "cbe1f19d302510ba5a35658cdac8b3b13d83a0db",
+    "buggy_hash": "1554b5aa5c7021966a477e80980952f3be59636d",
+    "commit_msg": "Squashed backend/lib/json/ changes from 442dbcd7..c0d511ea  c0d511ea :twisted_rightwards_arrows: merge branch release/2.1.1 27c65b86 :bookmark: version 2.1.1 0234e53e :memo: added section on used third-party tools b49ce351 :lipstick: fixed some warnings a646c9c5 :twisted_rightwards_arrows: merge branch cotire of https://github.com/tusharpm/json into tusharpm-cotire 8cec55a2 :construction: fixed more warnings 345a106d :lipstick: cleanup 967f9144 :construction: overworked fix for #465 7d14f167 :ambulance: fix for #465 b04543ec :art: fixed newlines 1a6d7f5b :construction: try to fix some warnings in MSVC f7075be9 :bug: reverted change for #464 f2dfa09a :bug: fix for #464 83a9c60d :hammer: refactored code to avoid using strcpy/strlen/strcat"
+  },
+  {
+    "repo_url": "https://github.com/miraclestars/android_kernel_samsung_msm8996.git",
+    "repo_name": "android_kernel_samsung_msm8996",
+    "fixed_hash": "432dbc025b7c42e3f4ab5387734e7da89228a772",
+    "buggy_hash": "159add55e92fa72f39c8aa112576dc57b02f6b99",
+    "commit_msg": "CVE-2016-3135: netfilter: x_tables: check for size overflow  Ben Hawkes says:  integer overflow in xt_alloc_table_info which on 32-bit systems can  lead to small structure allocation and a copy_from_user based heap  corruption.  Change-Id: I13c554c630651a37e3f6a195e9a5f40cddcb29a1 Reported-by: Ben Hawkes <hawkes@google.com> Signed-off-by: Florian Westphal <fw@strlen.de> Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org> "
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_samsung_apq8084.git",
+    "repo_name": "android_kernel_samsung_apq8084",
+    "fixed_hash": "f79f8d6564deae97b38d143f7ef9c29eca31a2bf",
+    "buggy_hash": "159c855b38da67d3d966d2cb8fefdedfd05c2a4d",
+    "commit_msg": "msm: camera: Restructure data handling to be more robust  Use dynamic array allocation instead of static array to prevent stack overflow. User-supplied number of bytes may result in integer overflow. To fix this we check that the num_byte isnt above 8K size.  Bug: 30559423 CRs-Fixed: 1060554 Change-Id: I9b05b846e5cc3a62b1a0a67be529f09abc764796 Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Corinna Vinschen <xda@vinschen.de>"
+  },
+  {
+    "repo_url": "https://github.com/karthick111/android_kernel_lenovo_msm8916.git",
+    "repo_name": "android_kernel_lenovo_msm8916",
+    "fixed_hash": "82d5105d452d53cba9e3ad6f619859be3aa8a931",
+    "buggy_hash": "15b6e0661513780deb6b09242117b7c0cb9457e9",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/apache/spark.git",
+    "repo_name": "spark",
+    "fixed_hash": "bc7304e1f9ac49998132d3f552939b84841b0d50",
+    "buggy_hash": "1a73046b415048af7a11565b065dade89097ed5a",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/salewski/emacs.git",
+    "repo_name": "emacs",
+    "fixed_hash": "6ff870218dd4bc015cc4115ceb2febd8d807e57c",
+    "buggy_hash": "1be3330b31f9c0d0d0f7d25641e8b81c807ca616",
+    "commit_msg": "Some inotify cleanup  This catches some problems with integer overflow and races that I noticed in inotify.c after reviewing the changes installed to fix Bug#26126. src/fns.c src/lisp.h"
+  },
+  {
+    "repo_url": "https://github.com/Jackeagle/kernel_msm-3.10.git",
+    "repo_name": "kernel_msm-3.10",
+    "fixed_hash": "1dd1ba8d35c999dde380ae19e1cded44875e1337",
+    "buggy_hash": "1bffba473f68fba11dba198201820caa6ccb9a45",
+    "commit_msg": "msm: camera: Restructure data handling to be more robust  Use dynamic array allocation instead of static array to prevent stack overflow. User-supplied number of bytes may result in integer overflow. To fix this we check that the num_byte isnt above 8K size.  Bug: 30559423 CRs-Fixed: 1060554 Change-Id: I9b05b846e5cc3a62b1a0a67be529f09abc764796 Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/RhineLOS-CAF/android_kernel_sony_msm.git",
+    "repo_name": "android_kernel_sony_msm",
+    "fixed_hash": "3f070c1529764aebba01ae97316e10154bb8de9f",
+    "buggy_hash": "1cf34b084bcc25a827ed2b52e5f00f9e85944a6c",
+    "commit_msg": "Revert UPSTREAM: ALSA: compress: fix an integer overflow check  This reverts commit 08f61d891d2f9770c20b107466f4cf26477a258c."
+  },
+  {
+    "repo_url": "https://github.com/fireice-uk/xmr-stak-nvidia.git",
+    "repo_name": "xmr-stak-nvidia",
+    "fixed_hash": "28ffb2315ab63a2a21331e970a8760826fe868d9",
+    "buggy_hash": "1d5df28a5239b024230ea9c6cac38e4c1f33078f",
+    "commit_msg": "fix 4GiB bug  fix unisgned integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/AICP/kernel_google_shamrock.git",
+    "repo_name": "kernel_google_shamrock",
+    "fixed_hash": "a7f2a233f4f8eb58e2f83abec05a9a03427ffe44",
+    "buggy_hash": "1dbff70441888f5b210108611d47fdbf3d16729d",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  CRs-Fxied: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Mixajlo/jmdns.git",
+    "repo_name": "jmdns",
+    "fixed_hash": "b1a4ccc01acc78893a1ca9f5d40d53d8d359960f",
+    "buggy_hash": "1e7f937617947236923a8182ca57ffae7acbafa3",
+    "commit_msg": "Fixes #93"
+  },
+  {
+    "repo_url": "https://github.com/jpoimboe/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "a5af83925363eb85d467933e3d6ec5a87001eb7c",
+    "buggy_hash": "1f3466a0538cde69b03f2aba13e6da72208e56cd",
+    "commit_msg": "bna: avoid writing uninitialized data into hw registers  The latest gcc-7 snapshot warns about bfa_ioc_send_enable/bfa_ioc_send_disable writing undefined values into the hardware registers:  drivers/net/ethernet/brocade/bna/bfa_ioc.c: In function \bfa_iocpf_sm_disabling_entry arch/arm/include/asm/io.h:109:22: error: "
+  },
+  {
+    "repo_url": "https://github.com/cockroachdb/cockroach.git",
+    "repo_name": "cockroach",
+    "fixed_hash": "278f3448ba6e88817feb133e81e44e08ba8b6c80",
+    "buggy_hash": "1ff15cee650ff5d42e3a4e244c80076bf1daa407",
+    "commit_msg": "sql/parser: improve error on out-of-range integer constants  Fixes #5429.  We now specifically mention the integer overflow in cases where an INTEGER is desired from a numeric constant but a DECIMAL would be used because of an overflow."
+  },
+  {
+    "repo_url": "https://github.com/rockdaboot/wget2.git",
+    "repo_name": "wget2",
+    "fixed_hash": "c2593de780fef59f747e227d4ee82161500bdde8",
+    "buggy_hash": "21ca3ca0749a265da3494d4cb26744c5ed20f44a",
+    "commit_msg": "libwget/http.c: Avoid signed integer overflow due to intermediate ptrdiff_t by casting operands to uintptr_t"
+  },
+  {
+    "repo_url": "https://github.com/OGAWAHirofumi/linux-tux3.git",
+    "repo_name": "linux-tux3",
+    "fixed_hash": "0f2ff82e11c86c05d051cae32b58226392d33bbf",
+    "buggy_hash": "21ccc32496b2f63228f5232b3ac0e426e8fb3c31",
+    "commit_msg": "drm/vc4: Fix an integer overflow in temporary allocation layout.  We copy the unvalidated ioctl arguments from the user into kernel temporary memory to run the validation from to avoid a race where the user updates the unvalidate contents in between validating them and copying them into the validated BO.  However in setting up the layout of the kernel side we failed to check one of the additions"
+  },
+  {
+    "repo_url": "https://github.com/sanssecours/libelektra.git",
+    "repo_name": "libelektra",
+    "fixed_hash": "8288ce1cc11cd8971bc3f4a7c957aad031c4b8eb",
+    "buggy_hash": "21e5c97caf46e5a29023865e5b0cf9e589058896",
+    "commit_msg": "Keyset: Fix unsigned integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/Slim80/Imperium_Kernel_LGH815_MM.git",
+    "repo_name": "Imperium_Kernel_LGH815_MM",
+    "fixed_hash": "77b89723fafdc76396782736704ba5379d7069bb",
+    "buggy_hash": "229abc434dda7b7587da7dc3d478074fc5f1eac4",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/svn2github/bochs.git",
+    "repo_name": "bochs",
+    "fixed_hash": "321be77d1ccca06ed65780b6e711c3890b4b8dc0",
+    "buggy_hash": "22a8a1877e34eee217902d08fa3166b84c64c462",
+    "commit_msg": "better way of fixing shift of 1 by 64-bit to avoid integer overflow  git-svn-id: http://svn.code.sf.net/p/bochs/code/trunk@13196 6c8e4198-a580-4521-a02f-c9ae86df1db9"
+  },
+  {
+    "repo_url": "https://github.com/jrnold/readr.git",
+    "repo_name": "readr",
+    "fixed_hash": "050f2d5c47c9cb16a39c579c5ea2f6adc8571432",
+    "buggy_hash": "235d1b524b7dd8ea3bae18674c36d4d6fac5a656",
+    "commit_msg": "Port integer overflow fix in localtime.c  * Fix integer overflow bug in reference mktime implementation. "
+  },
+  {
+    "repo_url": "https://github.com/Noltari/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "c21636bd64c511160846bdf87ef4c7ff48680c99",
+    "buggy_hash": "235e914069bd501be22597e6c0176f16b477ae37",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/searchivarius/nmslib.git",
+    "repo_name": "nmslib",
+    "fixed_hash": "4dab97993e59356953e50ae0b074e3379568bdc8",
+    "buggy_hash": "23a74f059c18b1bff9a8971ee62c0fc636fa2a1c",
+    "commit_msg": "HNSW - Negative model size"
+  },
+  {
+    "repo_url": "https://github.com/justinfrankel/WDL.git",
+    "repo_name": "WDL",
+    "fixed_hash": "b58fd962eb384f6b4ac0c467ce2c77909e2a4cad",
+    "buggy_hash": "23b5c0e0bf66004384737d3e10e3d7b643f81a01",
+    "commit_msg": "WDL_FastString: prevent signed integer overflow warnings -- from 1741d93f"
+  },
+  {
+    "repo_url": "https://github.com/BobZmotion/android_kernel_oneplus_msm8994.git",
+    "repo_name": "android_kernel_oneplus_msm8994",
+    "fixed_hash": "c40f631f789447a32f0af0ad778cb84a47055a6b",
+    "buggy_hash": "24150c6c905d14daeba91df47f381595e770e06e",
+    "commit_msg": "msm: mdss: Fix possible integer overflow  Avoid possible integer overflow while validating mdp3 lut config parameters.  Change-Id: Ie3f59748e613fbbf755a98dcc688491a8c4e2cca CRs-Fixed: 1104664 Signed-off-by: Sravan Kumar D.V.N <sravank1@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/webmproject/libvpx.git",
+    "repo_name": "libvpx",
+    "fixed_hash": "f22b828d685adee4c7a561990302e2d21b5e0047",
+    "buggy_hash": "2420f44342db48bb491a048f0cd14c818f7d5817",
+    "commit_msg": "Fix an integer overflow in vp9_mcomp.c  The MV unit test revealed an integer overflow issue in vp9_mcomp.c. This was caused if the MV was very large. In mv_err_cost"
+  },
+  {
+    "repo_url": "https://github.com/LebedevRI/rawspeed.git",
+    "repo_name": "rawspeed",
+    "fixed_hash": "416426f53268164955f9bc23fc5070a10ce23941",
+    "buggy_hash": "243d2680001d41cb2c42d0cc058a8278108a380a",
+    "commit_msg": "RawImageData::getData{Uncropped}: avoid integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/sidyhe/pugixml.git",
+    "repo_name": "pugixml",
+    "fixed_hash": "38edf255aee473ade74d955faa79e4f7a5c38eb1",
+    "buggy_hash": "24d1a4562b36ecfcd7a6b3b843921d553332a0f0",
+    "commit_msg": "Work around -fsanitize=integer issues  Integer sanitizer is flagging unsigned integer overflow in several functions in pugixml; unsigned integer overflow is well defined but it may not necessarily be intended.  Apart from hash functions both string_to_integer and integer_to_string use unsigned overflow - string_to_integer uses it to perform two-complement negation so that the bulk of the operation can run using unsigned integers. This makes it possible to simplify overflow checking. Similarly integer_to_string negates the number before generating a decimal representation but negating is impossible without unsigned overflow or special-casing certain integer limits.  For now just silence the integer overflow using a special attribute; also move unsigned overflow into string_to_integer from get_value_* so that we have fewer functions marked with the attribute.  Fixes #133."
+  },
+  {
+    "repo_url": "https://github.com/LongChair/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "92188c8f57bf02a564c17f7994c8434a2f3893fe",
+    "buggy_hash": "24f6559bd2417b30c848d27523c88949d537a83c",
+    "commit_msg": "avcodec/dcadsp: Fix runtime error: signed integer overflow: 394625024 8 cannot be represented in type int  Fixes: 643/clusterfuzz-testcase-5209078743695360  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/Stupeflix/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "63e400a8807dca7b0ffa3841df2e31f7419abb8d",
+    "buggy_hash": "25e93aacc2142f3b57f1e63c67ca46d304f154ef",
+    "commit_msg": "avcodec/pictordec: Check plane value before doing value/mask computations  Fixes integer overflow Fixes: 675/clusterfuzz-testcase-6722971232108544  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/AOSP-JF-MM/platform_frameworks_av.git",
+    "repo_name": "platform_frameworks_av",
+    "fixed_hash": "3a5d08caa60605f72cebc5061fb596432454cc8b",
+    "buggy_hash": "27d711c6e1c8fa44d7872187c25fd252f48e7dcb",
+    "commit_msg": "Guard against sample time overflow  Malformed content that has unexpectedly big delta values in stts atom might cause integer overflow on calculating sample time while preparing sample table. This commit prevents this situation.  Test: play mp4 file with quite big stts value Bug: 35985363  Change-Id: I6bc66f77b8b99a14517e56c3ceba9ddb9bf5524d"
+  },
+  {
+    "repo_url": "https://github.com/sunweaver/nx-libs.git",
+    "repo_name": "nx-libs",
+    "fixed_hash": "fa1af33b4acfe6ed33319f33cd2b00594ee71528",
+    "buggy_hash": "2866aadd46d80c0682db522598f04f1fc340e212",
+    "commit_msg": "render: Fix out of boundary heap access   commit ac15d4cecca377c5c31ab852c39bbd554ca48fe2  Author: Tobias Stoeckmann <tobias@stoeckmann.org>  Date: Mon Mar 13 19:13:14 2017 +0100   render: Fix out of boundary heap access   ProcRenderCreateRadialGradient and ProcRenderCreateConicalGradient must  be protected against an integer overflow during length check. This is  already included in ProcRenderCreateLinearGradient since the fix for  CVE-2008-2362.   This can only be successfully exploited on a 32 bit system for an  out of boundary read later on. Validated by using ASAN.   Reviewed-by: Adam Jackson <ajax@redhat.com>   Backported-to-NX-by: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>"
+  },
+  {
+    "repo_url": "https://github.com/apache/parquet-cpp.git",
+    "repo_name": "parquet-cpp",
+    "fixed_hash": "a5bcc38a40c2cfff5987d1fec65a99085a73abd2",
+    "buggy_hash": "286d75f9ad7c3272a9270f976d8c1965247104bb",
+    "commit_msg": "PARQUET-943: Fix build error on x86  L is small on x86:   src/parquet/arrow/reader.cc:52:55: warning: integer overflow in expression"
+  },
+  {
+    "repo_url": "https://github.com/Whissi/linux-stable.git",
+    "repo_name": "linux-stable",
+    "fixed_hash": "4ddd24d54fedff301e8f020d7b9f70116383af31",
+    "buggy_hash": "28c84df739e3ac2bdb7898d6b5f92aa72330a423",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/Sohamlad7/kernel_sony_msm8930.git",
+    "repo_name": "kernel_sony_msm8930",
+    "fixed_hash": "faae6f5b444102a949565aa62480ce26ad04698e",
+    "buggy_hash": "29e5b089f502804a8fe245f9e424f9283f7b24db",
+    "commit_msg": "introduce SIZE_MAX  commit a3860c1c5dd1137db23d7786d284939c5761d517 upstream.  ULONG_MAX is often used to check for integer overflow when calculating allocation size. While ULONG_MAX happens to work on most systems there is no guarantee that `size_t must be the same size as `long.  This patch introduces SIZE_MAX the maximum value of `size_t to improve portability and readability for allocation size validation.  Signed-off-by: Xi Wang <xi.wang@gmail.com> Acked-by: Alex Elder <elder@dreamhost.com> Cc: David Airlie <airlied@linux.ie> Cc: Pekka Enberg <penberg@kernel.org> Signed-off-by: Andrew Morton <akpm@linux-foundation.org> Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org> Cc: Qiang Huang <h.huangqiang@huawei.com> Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
+  },
+  {
+    "repo_url": "https://github.com/luk1337/android_kernel_samsung_msm8976.git",
+    "repo_name": "android_kernel_samsung_msm8976",
+    "fixed_hash": "e868c6eb8e3074541d8eedd6d93ed81e608a9333",
+    "buggy_hash": "2b079975ca9eb38819cf227f60679930bca866d8",
+    "commit_msg": "msm: cpp: Remove duplicate for integer overflow in cpp  Change-Id: If2273da6dcac5dd3870077e0ee21ec73aa50eff7"
+  },
+  {
+    "repo_url": "https://github.com/aceofall/vim.git",
+    "repo_name": "vim",
+    "fixed_hash": "7a40ea2138102545848ea86a361f1b8dec7552b5",
+    "buggy_hash": "2b2207ba69c6b009e466a36eef0644ca723e16d3",
+    "commit_msg": "patch 8.0.0219: ubsan reports errors for overflow  Problem: Ubsan reports errors for integer overflow. Solution: Define macros for minimum and maximum values. Select an  expression based on the value."
+  },
+  {
+    "repo_url": "https://github.com/miraclestars/android_kernel_samsung_msm8996.git",
+    "repo_name": "android_kernel_samsung_msm8996",
+    "fixed_hash": "2662266a68b1be0ea70f45fca91ead4aba22ec25",
+    "buggy_hash": "2b4a4ff7c657ce9e6a66d1ebe37d370056a7a62b",
+    "commit_msg": "CVE-2016-3135: netfilter: x_tables: check for size overflow  Ben Hawkes says:  integer overflow in xt_alloc_table_info which on 32-bit systems can  lead to small structure allocation and a copy_from_user based heap  corruption.  Change-Id: I13c554c630651a37e3f6a195e9a5f40cddcb29a1 Reported-by: Ben Hawkes <hawkes@google.com> Signed-off-by: Florian Westphal <fw@strlen.de> Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org> "
+  },
+  {
+    "repo_url": "https://github.com/shamanDevel/shaman.rpg.git",
+    "repo_name": "shaman.rpg",
+    "fixed_hash": "ea0dbbc50d974df39a78fbc938195816bb2fa9ea",
+    "buggy_hash": "2bb713626a90294118c8f23d961ac15fc0657202",
+    "commit_msg": "Various improvements on existing objects:  TriggerLevelElement: area trigger outline now checks the map height SimpleLogicController: fixed integer overflow in slot definitions AbstractMovableTriggerModel: added one-way option so that the trigger can only be activated not deactivated ViewToggleModel: added missing slot definitions changed from AbstractModel to AbstractMultiModel"
+  },
+  {
+    "repo_url": "https://github.com/bhilburn/powerlevel9k.git",
+    "repo_name": "powerlevel9k",
+    "fixed_hash": "c403ad6cd72669a1849fc5738ed51acaa946d2e2",
+    "buggy_hash": "2be5d5071eaec4b6baecd45bca9ecb085953b763",
+    "commit_msg": "Adds Android icon/battery plugin support  Plus fixes bhilburn/powerlevel9k#479 which was causing integer overflow on 32-bit CPUs"
+  },
+  {
+    "repo_url": "https://github.com/Stark2x/kernel-msm.git",
+    "repo_name": "kernel-msm",
+    "fixed_hash": "8aed7c00d9cad1d94018602f2f4b3f117e01de79",
+    "buggy_hash": "2c49f339e8dcd08a773b5916d80791ac7f894e7f",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/fosnola/libstaroffice.git",
+    "repo_name": "libstaroffice",
+    "fixed_hash": "95b119ede6060b81ebcfbc31bb57f215520445b8",
+    "buggy_hash": "2d6253c7a692a3d92785dd990fce7256ea05e794",
+    "commit_msg": "ofz#1056 check max possible # of colors in palette  ... to avoid integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/vivier/qemu-m68k.git",
+    "repo_name": "qemu-m68k",
+    "fixed_hash": "55229247181c40baa3e92b08ee043d4e8453087e",
+    "buggy_hash": "2d896b454a0e19ec4c1ddbb0e0b65b7e54fcedf3",
+    "commit_msg": "Merge remote-tracking branch \remotes/dgibson/tags/ppc-for-2.9-20170222 into staging  ppc patch queue for 2017-02-22  This pull request has:  Assorted bugfixes  The softfloat and cpu hotplug changes aren  entirely ppc specific"
+  },
+  {
+    "repo_url": "https://github.com/nitrogen-project/android_frameworks_av.git",
+    "repo_name": "android_frameworks_av",
+    "fixed_hash": "087fc8fdaa4ec4867ebc7d55457e983a03a71bf1",
+    "buggy_hash": "301e841f86dceacc497fb47c5a2503622b24fff2",
+    "commit_msg": "DO NOT MERGE - stagefright: fix integer overflow error am: 52780d3ce3 am: b39e9bffc1 am: 21d9f05d94 am: 483a7e47ac -s ours am: 449277dde0 am: 301e841f86  Change-Id: Ie35ac1b22901386c65489efc2ad8d82cd724d4cd"
+  },
+  {
+    "repo_url": "https://github.com/CypherOS/kernel_lge_bullhead.git",
+    "repo_name": "kernel_lge_bullhead",
+    "fixed_hash": "1f718c19df6ee21d65efa14d50da32e67c5b9f7a",
+    "buggy_hash": "30f8585e30025ac0e160c059f2b7cd1b67dd0b18",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/kn06497/android_kernel_samsung_kmini3g.git",
+    "repo_name": "android_kernel_samsung_kmini3g",
+    "fixed_hash": "ea372a89e6609bd0661be6961d521fedfe82d1de",
+    "buggy_hash": "31bad7b779b3ada145beaa5a11d7debecfd7b1c6",
+    "commit_msg": "bql: Fix POSDIFF"
+  },
+  {
+    "repo_url": "https://github.com/CS3733/AlcoholLabelProject.git",
+    "repo_name": "AlcoholLabelProject",
+    "fixed_hash": "2d459ea7212085f08405d0cf58bb08f1adce6c05",
+    "buggy_hash": "32171e52bd67e8471070a01163cde4934d1d6eb8",
+    "commit_msg": "Fix integer overflow bug"
+  },
+  {
+    "repo_url": "https://github.com/openSUSE/kernel-source.git",
+    "repo_name": "kernel-source",
+    "fixed_hash": "560498d4a9a33ccaf4016993435a543f49501508",
+    "buggy_hash": "32319c030d532ea043b689ca4d5cf84dfaaf1867",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/tuliom/glibc.git",
+    "repo_name": "glibc",
+    "fixed_hash": "b057b4813c9f05c3cedff0c74b58c9c9d583f09f",
+    "buggy_hash": "325241608584653c1275a2ea28ce349a04fc4d28",
+    "commit_msg": "Fix memory handling in strxfrm_l"
+  },
+  {
+    "repo_url": "https://github.com/DespairFactor/angler.git",
+    "repo_name": "angler",
+    "fixed_hash": "bce8266ca75d9ddbaa977f71d8b3056934e048a1",
+    "buggy_hash": "327ae01bac726746e15da4b27f21c5064246fc49",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_motorola_msm8226.git",
+    "repo_name": "android_kernel_motorola_msm8226",
+    "fixed_hash": "6d2214c22a799c5bfb8d99f65a5baa28ea556773",
+    "buggy_hash": "32e9b24cedd6253ba532fe80ae0ca7e2960c0acf",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/afonso360/nom-lua.git",
+    "repo_name": "nom-lua",
+    "fixed_hash": "c806fd70f07efc7f8de1b22d8d0d7a2a40575a63",
+    "buggy_hash": "33e04b59783082dcbebe8fc84bf70918f121ccb3",
+    "commit_msg": "Add integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/ElektraInitiative/libelektra.git",
+    "repo_name": "libelektra",
+    "fixed_hash": "cc26622a0f6d97712c2a305db20d5753a2d0774b",
+    "buggy_hash": "35ba55441215cb230273cb738241f8b5f9c727eb",
+    "commit_msg": "Keyset: Fix unsigned integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/Wiko-MSM8916/android_kernel_wiko_msm8916.git",
+    "repo_name": "android_kernel_wiko_msm8916",
+    "fixed_hash": "6e6cb123af952e4a4e225e4dbece695313c7a7a0",
+    "buggy_hash": "369aea20f841ae0b1017593d70eddea24dbdda8e",
+    "commit_msg": "ASoC: msm: audio-effects: misc fixes in h/w accelerated effect Adding memory copy size check and integer overflow check in h/w accelerated effect driver."
+  },
+  {
+    "repo_url": "https://github.com/dot-asm/openssl.git",
+    "repo_name": "openssl",
+    "fixed_hash": "8ac6a53100bd6730a8824968ec25dccc727c29c9",
+    "buggy_hash": "37332ecc010276b899810aa3ac26885bd9dcb57c",
+    "commit_msg": "Fix a possible integer overflow in long_c2i  Credit to OSS-Fuzz for finding this.  Reviewed-by: Matt Caswell <matt@openssl.org> Reviewed-by: Richard Levitte <levitte@openssl.org> "
+  },
+  {
+    "repo_url": "https://github.com/GuaiYiHu/android_kernel_xiaomi_leo.git",
+    "repo_name": "android_kernel_xiaomi_leo",
+    "fixed_hash": "12812412fabcb1ed28d7c9c6ea7ff50a40ee8189",
+    "buggy_hash": "386190bcbda6ece6ea36fc7f3de134fd5af3d4f4",
+    "commit_msg": "FROMLIST: ALSA: compress: fix an integer overflow check  I previously added an integer overflow check here but looking at it now its still buggy.  The bug happens in snd_compr_allocate_buffer"
+  },
+  {
+    "repo_url": "https://github.com/ResurrectionRemix/frameworks_av.git",
+    "repo_name": "frameworks_av",
+    "fixed_hash": "7ccacce12a9408780a1f8b68999d8dcee06300cd",
+    "buggy_hash": "396a5706326f7cf6ed8006a11d3251ec27b67b57",
+    "commit_msg": "Merge DO NOT MERGE - stagefright: fix integer overflow error into nyc-dev am: 500412d788 am: aad4991f4b  Change-Id: I3d77e50ac473423b0745fd4d0867040229e913aa"
+  },
+  {
+    "repo_url": "https://github.com/guixxx/powerlevel9k.git",
+    "repo_name": "powerlevel9k",
+    "fixed_hash": "0a7a76680d7451a75b7730f38b9a6a74d89c3dfc",
+    "buggy_hash": "39eea0479da3f5cbccdb630132f728e84c3f9427",
+    "commit_msg": "Adds Android icon/battery plugin support  Plus fixes bhilburn/powerlevel9k#479 which was causing integer overflow on 32-bit CPUs"
+  },
+  {
+    "repo_url": "https://github.com/mati75/linux-rpi.git",
+    "repo_name": "linux-rpi",
+    "fixed_hash": "7a17c1a075812353d1bee324d07d21dba91693a6",
+    "buggy_hash": "3b351f955ee6fc5ef0f7ad4812a2add66bb8821d",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/mar-file-system/erasureUtils.git",
+    "repo_name": "erasureUtils",
+    "fixed_hash": "920ba86520e65a1fd7186bc0d05a855df8a62450",
+    "buggy_hash": "3b63e21e5555e4d32d46acfddf2cbfe0dab49bb0",
+    "commit_msg": "Count close failures and only fail the ne_colse operation if there is an unsafe number of errors. Also fixed an integer overflow bug in xattr_check that.  Resolves issue #10."
+  },
+  {
+    "repo_url": "https://github.com/jsonn/src.git",
+    "repo_name": "src",
+    "fixed_hash": "83a10693519d106c365c603c6990ba3fd2357f51",
+    "buggy_hash": "3bc768f73372e07270ac2535e1407608f497d02a",
+    "commit_msg": "Avoid an integer overflow on systems w/ more than 2G of RAM."
+  },
+  {
+    "repo_url": "https://github.com/google/shaka-packager.git",
+    "repo_name": "shaka-packager",
+    "fixed_hash": "a092c3b46110ee3d8684d559353ac0fe37d580a8",
+    "buggy_hash": "3c0f49577a6d313302595bd777c7550bc42a26e8",
+    "commit_msg": "Fix possible integer overflow in WebM duration  The issue could lead to the MPD attribute mediaPresentationDuration being\r wrongly generated for WebM streams with a duration longer than INT32_MAX.\r \r The root-cause was that StreamInfo::set_duration"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "9323ed7be089b38b1aa8d94a8fc543ded423c0ff",
+    "buggy_hash": "3c4b1a6e63fdfd53cd192dd253f32e6728aae82c",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/LLJY/android_kernel_sony_msm8996.git",
+    "repo_name": "android_kernel_sony_msm8996",
+    "fixed_hash": "a82e9ea9af468b87c508ef8a1c0b4ed8942be086",
+    "buggy_hash": "3ca865dca483363d08ef36f61d46486f4236d80a",
+    "commit_msg": "msm: mdss: Fix possible integer overflow  Avoid possible integer overflow while validating mdp3 lut config parameters.  Change-Id: Ie3f59748e613fbbf755a98dcc688491a8c4e2cca CRs-Fixed: 1104664 Signed-off-by: Sravan Kumar D.V.N <sravank1@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/LinkiTools/gcc.git",
+    "repo_name": "gcc",
+    "fixed_hash": "3319bb15c4f177d5d81a845ecf121b14ab74d7f9",
+    "buggy_hash": "3cc7b21c3aa3b94512155ad1da450b34fc7409ec",
+    "commit_msg": "PR middle-end/80364 - sanitizer detects signed integer overflow in gimple-ssa-sprintf.c  gcc/ChangeLog:  PR middle-end/80364  * gimple-ssa-sprintf.c"
+  },
+  {
+    "repo_url": "https://github.com/XOSP-Project/android_frameworks_native.git",
+    "repo_name": "android_frameworks_native",
+    "fixed_hash": "ec01232522620d21465cc3e20fff2c5b0cfa2667",
+    "buggy_hash": "3d4ac32fc0f68d730b3b43ed0da7426513a0e2bf",
+    "commit_msg": "Fix integer overflow in unsafeReadTypedVector  Passing a size to std::vector that is too big causes it to silently under-allocate when exceptions are disabled leaving us open to an OOB write. We check the bounds and the resulting size now to verify allocation succeeds.  Test: Verified reproducer attached to bug no longer crashes Camera  service. Bug: 31677614  Change-Id: I064b1442838032d93658f8bf63b7aa6d021c99b7 "
+  },
+  {
+    "repo_url": "https://github.com/gabraham/flashpca.git",
+    "repo_name": "flashpca",
+    "fixed_hash": "ce9456c846819d1c7f0d3fba2fd6245ad3e3e508",
+    "buggy_hash": "3eebe5d85b22340256a3c1244e72cf7a036f3dd7",
+    "commit_msg": "Fixed integer overflow in computing memory req"
+  },
+  {
+    "repo_url": "https://github.com/WisniaPL/LeEco-Le1S-Kernel.git",
+    "repo_name": "LeEco-Le1S-Kernel",
+    "fixed_hash": "23ee72021ac70c879ca6c77443f1e28f1607851d",
+    "buggy_hash": "3f67af67dafa71e4c121f621826d8538a809fa48",
+    "commit_msg": "ALSA: compress: fix an integer overflow check  I previously added an integer overflow check here but looking at it now its still buggy.  The bug happens in snd_compr_allocate_buffer"
+  },
+  {
+    "repo_url": "https://github.com/nayuki/QR-Code-generator.git",
+    "repo_name": "QR-Code-generator",
+    "fixed_hash": "ac91c54ce1b5904a65adcd15dfc1dd7b94bcafe3",
+    "buggy_hash": "407816ea4950f8595527f5691a46ddc5ab5f0c86",
+    "commit_msg": "Fixed QrSegment.getTotalBits"
+  },
+  {
+    "repo_url": "https://github.com/ceph/jerasure.git",
+    "repo_name": "jerasure",
+    "fixed_hash": "31cd20f7f318c13604bbd5add532003358e469eb",
+    "buggy_hash": "414c96ef2b9934953b6facb31d803d79b1dd1405",
+    "commit_msg": "Resolve cppcheck Signed integer overflow error  The type of expression 1<<31 is signed int and this causes cppcheck to issue the following warning.  src/gf_w32.c:681"
+  },
+  {
+    "repo_url": "https://github.com/libimobiledevice/libplist.git",
+    "repo_name": "libplist",
+    "fixed_hash": "fdebf8b319b9280cd0e9b4382f2c7cbf26ef9325",
+    "buggy_hash": "415c35a5f75f1192561fe1426465bbfcf0f30d65",
+    "commit_msg": "bplist: Fix integer overflow check"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "9a2ce2a39356d10ec93d2dff3632ee46be608a70",
+    "buggy_hash": "42e20c17dfa24a4ec8f2d11ccbb4f393b262d082",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/UBERTC/GCC-UBER.git",
+    "repo_name": "GCC-UBER",
+    "fixed_hash": "79527fb189f6d65f11e645a1806b778155e57fd5",
+    "buggy_hash": "4542ce741b23390b220bc0b97d53206aca9a924a",
+    "commit_msg": "Backport r245531  2017-03-22 Martin Liska <mliska@suse.cz>   Backport from mainline  2017-02-17 Martin Liska <mliska@suse.cz>   PR rtl-optimization/79574  * gcse.c"
+  },
+  {
+    "repo_url": "https://github.com/jjsuwa/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "9244b839b788e4677019041907ff5a4378a23490",
+    "buggy_hash": "45eeb1f785d6c726181568db341bbf80b43e32c0",
+    "commit_msg": "avcodec/dcadsp: Fix runtime error: signed integer overflow  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_motorola_msm8610.git",
+    "repo_name": "android_kernel_motorola_msm8610",
+    "fixed_hash": "8735ffb17c140b181d519ab4ad0c0abdf0f5ea58",
+    "buggy_hash": "4626c22f968f290e971be3d0debbb97f2cdffdcf",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> "
+  },
+  {
+    "repo_url": "https://github.com/hardwareadictos/gzr_kernel_oneplus_msm8994.git",
+    "repo_name": "gzr_kernel_oneplus_msm8994",
+    "fixed_hash": "422ef72378656c866ce8381eea10d64e99f325d7",
+    "buggy_hash": "46a84a7e273c44c797dd17565c94d57f5541d305",
+    "commit_msg": "Merge ALSA: info: Check for integer overflow in snd_info_entry_write"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_motorola_msm8960-common.git",
+    "repo_name": "android_kernel_motorola_msm8960-common",
+    "fixed_hash": "f7d25ff10c601a1a460068150d968fc6593c04cd",
+    "buggy_hash": "46bd67ff1a6ac63d5917c9a2c3ff5ae9decfce32",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CAF-Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org>  CVE-2016-10233  Change-Id: Ib11b1ab3ab2e88d7fe84c352ae6ac9ef66d0d0d2 "
+  },
+  {
+    "repo_url": "https://github.com/AmolAmrit/Escrima_kernel_xiaomi_msm8956.git",
+    "repo_name": "Escrima_kernel_xiaomi_msm8956",
+    "fixed_hash": "f2580f76ee16606a9d8661cde4528cb9117bfe5d",
+    "buggy_hash": "4741c34ceff5bf916db475d381f134ef461cf7e3",
+    "commit_msg": "msm: camera: Restructure data handling to be more robust Use dynamic array allocation instead of static array to prevent stack overflow. User-supplied number of bytes may result in integer overflow. To fix this we check that the num_byte isnt above 8K size.  CRs-Fixed: 1060554 Change-Id: I407b5ec8cdc2ac7f3b491644418d3eb1101ce65a Signed-off-by: Samyukta Mogily <smogily@codeaurora.org> Signed-off-by: MOVZX <movzx@yahoo.com>"
+  },
+  {
+    "repo_url": "https://github.com/gismoZ/android_kernel_xiaomi_msm8956.git",
+    "repo_name": "android_kernel_xiaomi_msm8956",
+    "fixed_hash": "bc080ea65493b639c9b08fc9a466fae336d8efed",
+    "buggy_hash": "47788e531dcb623ae1b11d2493cde87801a0fe53",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/alex-ab/genode.git",
+    "repo_name": "genode",
+    "fixed_hash": "eb59630c96a1258cbfb58390120d7bdf81c8ad69",
+    "buggy_hash": "4799d783400e004c2f4e88a270caf888b1e3154e",
+    "commit_msg": "base-hw: Fix PML4 size and constants  The size of the whole table and table entries were exchanged for PML4 leading to out-of-bound accesses for addesses >= 2^39. Some constants were lacking type suffixes causing integer overflows.  Added assertions to catch out-of-bound accesses early on.  Fixes #2210 Fixes #2211"
+  },
+  {
+    "repo_url": "https://github.com/sociomantic-tsunami/ocean.git",
+    "repo_name": "ocean",
+    "fixed_hash": "f72df5256c6eda1cadf02ebae7dc2c0d09479f33",
+    "buggy_hash": "486d4959787d65366d5992610535240aeaf1ce32",
+    "commit_msg": "Avoid overflow if start time greater than stop time  This should not happen but if it does return 0 rather than a huge value resulting from an integer overflow."
+  },
+  {
+    "repo_url": "https://github.com/BytesClub/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "201005f2e7785df6b4b703a98dd77ff8c8bc9b69",
+    "buggy_hash": "4977ab6e92e267afe9d8f78438c3db330ca8434c",
+    "commit_msg": "linux: Merge branch from linux/master into forked repo"
+  },
+  {
+    "repo_url": "https://github.com/letoram/xarcan.git",
+    "repo_name": "xarcan",
+    "fixed_hash": "5ef437dafff467d9d2d2416c8faeea86fec49560",
+    "buggy_hash": "4a4626092b3f1603bee4ac41979880ce6bc84773",
+    "commit_msg": "render: Fix out of boundary heap access  ProcRenderCreateRadialGradient and ProcRenderCreateConicalGradient must be protected against an integer overflow during length check. This is already included in ProcRenderCreateLinearGradient since the fix for CVE-2008-2362.  This can only be successfully exploited on a 32 bit system for an out of boundary read later on. Validated by using ASAN.  Reviewed-by: Adam Jackson <ajax@redhat.com>"
+  },
+  {
+    "repo_url": "https://github.com/ceph/jerasure.git",
+    "repo_name": "jerasure",
+    "fixed_hash": "39612c75510327dcb6ebeef1b4e3868ff5808fab",
+    "buggy_hash": "4add4fc4d84eaa0ff779ac92e5270c08c278b2d9",
+    "commit_msg": "Resolve cppcheck Signed integer overflow error  The type of expression 1<<31 is signed int and this causes cppcheck to issue the following warning.  src/gf_w32.c:681"
+  },
+  {
+    "repo_url": "https://github.com/genodelabs/genode.git",
+    "repo_name": "genode",
+    "fixed_hash": "eb59630c96a1258cbfb58390120d7bdf81c8ad69",
+    "buggy_hash": "4b0b4928f519320d841e02b59ae81eb8ad233252",
+    "commit_msg": "base-hw: Fix PML4 size and constants  The size of the whole table and table entries were exchanged for PML4 leading to out-of-bound accesses for addesses >= 2^39. Some constants were lacking type suffixes causing integer overflows.  Added assertions to catch out-of-bound accesses early on.  Fixes #2210 Fixes #2211"
+  },
+  {
+    "repo_url": "https://github.com/eegorov/zen-kernel.git",
+    "repo_name": "zen-kernel",
+    "fixed_hash": "4ddd24d54fedff301e8f020d7b9f70116383af31",
+    "buggy_hash": "4c01247f59816034c359d77181d02e70e1dd9504",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/facebook/fatal.git",
+    "repo_name": "fatal",
+    "fixed_hash": "b2b2944f1f285372d2376aa3ca4ca42d5c58caff",
+    "buggy_hash": "4c230194b09edaff2387ff87f6910c63fc71ee2b",
+    "commit_msg": "Fix UBSAN failures in fatal/codec/test/varint_test.cpp  Summary: In that test we have signed integer overflows which are undefined behavior.  The following tests were failing when run with Undefined Behavior Sanitizer"
+  },
+  {
+    "repo_url": "https://github.com/bryan2894/android_kernel_samsung_msm8660-common.git",
+    "repo_name": "android_kernel_samsung_msm8660-common",
+    "fixed_hash": "2bb8115b835e7715121f8f87361f3383683a7342",
+    "buggy_hash": "4cc171bd23d120bae4a892820fb731848feb540d",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CAF-Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org>  CVE-2016-10233  Change-Id: Ib11b1ab3ab2e88d7fe84c352ae6ac9ef66d0d0d2 "
+  },
+  {
+    "repo_url": "https://github.com/arter97/caf_msm-3.18.git",
+    "repo_name": "caf_msm-3.18",
+    "fixed_hash": "c336cc282c901379202478d128a860be4793ac0f",
+    "buggy_hash": "4cc1c05eb12199d75f77ba0d2b9d14239b810d84",
+    "commit_msg": "Merge msm: mdss: Fix possible integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/esa-n/android_kernel_lge_hammerhead.git",
+    "repo_name": "android_kernel_lge_hammerhead",
+    "fixed_hash": "b23ab023aa033f7938e5115c0843a94e061af647",
+    "buggy_hash": "4d86ed813ce91a7fa8e41541badecbb449c138f3",
+    "commit_msg": "crypto msm check potential integer overflow on AEAD req length  According to the specification of AEAD AEAD request cryptlen is not a Fixed maximum and assoclen is also same. This could lead to potential integer overflow thus allocating less memory. So we need to check potential integer overflow on AEAD request length.  Change-Id I58a0c5e1a6e890bad30f7865e96b7db46337158c Signed-off-by Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/serhiy-storchaka/cpython.git",
+    "repo_name": "cpython",
+    "fixed_hash": "1aa1803b3df2af9481628b8896babbd686d314ff",
+    "buggy_hash": "4ec14c2360c967da2194eae96b3034a48aa06fad",
+    "commit_msg": "bpo-27880: Fixed integer overflow in cPickle when pickle large strings or"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "c2a14927577f02997260a972d95a92323fa220b8",
+    "buggy_hash": "4f7d3847b1190dba0eb439cd9e1264051eb8d4f4",
+    "commit_msg": "Further changes to guard against integer overflow in the width and precision of printf"
+  },
+  {
+    "repo_url": "https://github.com/kmorgannn/CAG.git",
+    "repo_name": "CAG",
+    "fixed_hash": "dec043777377ea329f657239571c72fd0864f32e",
+    "buggy_hash": "4f94fce3efb3769c75dbd83be847f285c600baba",
+    "commit_msg": "fixing savannah integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/Alberto97/android_kernel_motorola_msm8953.git",
+    "repo_name": "android_kernel_motorola_msm8953",
+    "fixed_hash": "437e8605db19e64c66b12d6909647997d3694996",
+    "buggy_hash": "4fa3b2e65eab5953d04440e2f9180b56f8151ef1",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/gentoo/gentoo.git",
+    "repo_name": "gentoo",
+    "fixed_hash": "07215a54a45d696a2935ee96c64c96fe7087368d",
+    "buggy_hash": "4fca795babb770be843abe712bc93450ebb39c69",
+    "commit_msg": "dev-perl/Math-FFT: Bump to version 1.340.0  Upstream: - Fix . in @INC - Avoid integer overflow in _spctrm by using doubles for n2  Bug: https://bugs.gentoo.org/614936 Package-Manager: Portage-2.3.4 Repoman-2.3.2"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "f2c7ab6f4e772bc0efbc9893a1bfc1f2f29f57f1",
+    "buggy_hash": "503e030e5a5b4f293339b8b6cf47149e4eff9383",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/aconverse/googletest.git",
+    "repo_name": "googletest",
+    "fixed_hash": "633f25203f0c3438cf6215ed6dad2296f2b04a45",
+    "buggy_hash": "50f3bafb1aefcdd0704b045bcbf58b2a81720256",
+    "commit_msg": "Suppress unsigned overflow instrumentation in the LCG  The rest of the"
+  },
+  {
+    "repo_url": "https://github.com/CypherOS/hardware_qcom_display.git",
+    "repo_name": "hardware_qcom_display",
+    "fixed_hash": "1f318a2bca33b8bcf934acf5c0cb3566bc22a4b7",
+    "buggy_hash": "51630074e93141adf7d1db5644f84d65349dc48b",
+    "commit_msg": "libmemtrack: Fix integer overflow in kgsl function  In the kgsl function which gets memory info for a pid there could be possibility of integer overflow in operations with size accounted_sizeand unaccounted_size due to which result might be smaller than these values. External input size is verified and overflow check has been added.  CRs-Fixed: 1103020 Change-Id: Ic450e990598777591739635facc08fb7a2e477f9 Signed-off-by: Archana Sriram <apsrir@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/obsd-vmm-live-migration/openbsd-src.git",
+    "repo_name": "openbsd-src",
+    "fixed_hash": "6a848d848e892ad578b49e5099619040cc52e903",
+    "buggy_hash": "51a294dfb3432429fd38a2c33fa8b5a917ba62ef",
+    "commit_msg": "Check for integer overflow when parsing times in convtime"
+  },
+  {
+    "repo_url": "https://github.com/Alucard24/Alucard-Kernel-LG-G5.git",
+    "repo_name": "Alucard-Kernel-LG-G5",
+    "fixed_hash": "74a87b73399ea2be22a20b0859fcf349fea63b9e",
+    "buggy_hash": "51ba8c3b74e91fff42513e0667d1ab3b380edd3f",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/MikeNachbaur/CocoaLumberjack.git",
+    "repo_name": "CocoaLumberjack",
+    "fixed_hash": "2593cd02da4c5cd9ff2625bb0b8b3dd5bc395a60",
+    "buggy_hash": "520f3b9dd1e0b540c9e49d1e68880c2457543f48",
+    "commit_msg": "Clean up CocoaLumberjack.swift a little  Rename `SwiftLogMacro` to `_DDLogMessage` instead because `SwiftLogMacro` is a weird name for this. Leave the old name behind but marked as deprecated for now; it should be removed later. Give `_DDLogMessage` a more sane argument ordering as well"
+  },
+  {
+    "repo_url": "https://github.com/krasCGQ/android_kernel_xiaomi_msm8916.git",
+    "repo_name": "android_kernel_xiaomi_msm8916",
+    "fixed_hash": "89b4a0985fae83579975ab4e920f735b666c7bf4",
+    "buggy_hash": "5249f22f1c3a04f51182857c8042b94f4602900b",
+    "commit_msg": "IB/core: don  disallow registering region starting at 0x0  commit 66578b0b2f69659f00b6169e6fe7377c4b100d18 upstream.  In a call to ib_umem_get"
+  },
+  {
+    "repo_url": "https://github.com/freedesktop/drm-tip.git",
+    "repo_name": "drm-tip",
+    "fixed_hash": "e7e11f99564222d82f0ce84bd521e57d78a6b678",
+    "buggy_hash": "53e16798b0864464c5444a204e1bb93ae246c429",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/bphinz/tigervnc.git",
+    "repo_name": "tigervnc",
+    "fixed_hash": "bf3bdac082978ca32895a4b6a123016094905689",
+    "buggy_hash": "53f520567202928f908b5f94f6d143e7067a8bdd",
+    "commit_msg": "Fix crash from integer overflow in SMsgReader::readClientCutText  The length sent by client is U32 but is converted into int. If it was bigger than 0x7fffffff the resulting int is negative it passes the check against maxCutText and later throws std::bad_alloc from CharArray which takes down the whole server.  All the Streaming API deals with lengths in ints so we cant tell it to skip that big amount of data. And it is not realistic to expect more than 2GB of clipboard data anyway. So lets just throw rdr::Exception that will disconnect this client and keep the server alive."
+  },
+  {
+    "repo_url": "https://github.com/qiuyouming/android_kernel_wingtech_msm8916.git",
+    "repo_name": "android_kernel_wingtech_msm8916",
+    "fixed_hash": "75033fed8b6c96cb6b78f62483a3a5d5d75f6bed",
+    "buggy_hash": "54a9e4813a8b70566e16f82af5f32035c2a628cb",
+    "commit_msg": "msm: kgsl: Check for integer overflow before allocating memory  In _kgsl_sharedmem_page_alloc"
+  },
+  {
+    "repo_url": "https://github.com/raphaelbergamini/wt.git",
+    "repo_name": "wt",
+    "fixed_hash": "15a4eaf4339cf7fe17476e12be508960c00ebf62",
+    "buggy_hash": "55b94d9c383e8a9d71712146acd4b04e7397cf1a",
+    "commit_msg": "Several changes:   - Fixed crash on missing err parameter in jserror request  - WebSockets frame size integer overflow check  - Fix #5597: iOS does not detect click events on non-clickable objects detect clicks with touchevents instead  - Removed obsolete WtSoundManager.as"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "5c0550adaf3823aa4ec4263a5c407ff755bf4cec",
+    "buggy_hash": "55c53b8217fc987e42eeb71a370c76dbb0a6474c",
+    "commit_msg": "Add tests to double-check that nothing within SQLite ever tries to allocate amounts of memory that are close to the maximum signed integer leading to an integer overflow within malloc"
+  },
+  {
+    "repo_url": "https://github.com/Kentoku/Spider.git",
+    "repo_name": "Spider",
+    "fixed_hash": "94a18ff706d13e034de00c959e0d144de190249a",
+    "buggy_hash": "55fa23ce7cc135f8101722fd9e6944723156145a",
+    "commit_msg": "fix bug when using timespec in spider_get_conn_from_idle_connection"
+  },
+  {
+    "repo_url": "https://github.com/Asderdd/android_kernel_google_shamrock.git",
+    "repo_name": "android_kernel_google_shamrock",
+    "fixed_hash": "749cc5f4f9faecab2de687dd0418eac65f6415e7",
+    "buggy_hash": "57e0c036635adda95653b5c6ee63687392b78e40",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  CRs-Fxied: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "370338f81a19d0611e7b62c3e649983102dd46b9",
+    "buggy_hash": "584e106649a02a6e27c784326cfbb08110804cc6",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/AICP/frameworks_native.git",
+    "repo_name": "frameworks_native",
+    "fixed_hash": "1c8d6b6cb17f51020b85d65e664db9ccc7363db7",
+    "buggy_hash": "5900246b93ae40de3ab016c201abbb980e4f68c3",
+    "commit_msg": "Benign unsigned integer overflow in Parcel  The realloc case in continueWrite did not update the gParcelGlobalAllocCount value when an allocation occurred.  In addition there are conditions that could cause the gParcelGlobalAllocCount value to be decremented below 0 resulting in a benign unsigned integer overflow that can cause corrupted values to be returned through system profiling mechanisms.  BUG: 23972600 Change-Id: Ibe07db91a811a04b486760eb78d81c926ba8503d"
+  },
+  {
+    "repo_url": "https://github.com/Seraph08/android_kernel_oneplus_msm8994.git",
+    "repo_name": "android_kernel_oneplus_msm8994",
+    "fixed_hash": "85bb8d95a2f6afd9470c1778a285b5910bb384bb",
+    "buggy_hash": "591106249de93770d5c293662c7d00f378ce7967",
+    "commit_msg": "ALSA info Check for integer overflow in snd_info_entry_write"
+  },
+  {
+    "repo_url": "https://github.com/david-eckardt-sociomantic/ocean-1.git",
+    "repo_name": "ocean-1",
+    "fixed_hash": "cf29a45c87eca57db0736a7d5bbffb41c481da40",
+    "buggy_hash": "597ea07f2b797c8997a49a560f2eaf3380d58afa",
+    "commit_msg": "Avoid overflow if start time greater than stop time  This should not happen but if it does return 0 rather than a huge value resulting from an integer overflow."
+  },
+  {
+    "repo_url": "https://github.com/Ghabry/easyrpg-liblcf.git",
+    "repo_name": "easyrpg-liblcf",
+    "fixed_hash": "98c8709904cc6d46ebcfbe6af5a85f42735888db",
+    "buggy_hash": "5abb593d2ec9f45b58bfaa9d5c7c88f15df8e586",
+    "commit_msg": "Fix an integer overflow in LcfReader::ReadString resulting in a heap corruption.  Thanks to @scrippie  Fixes #194"
+  },
+  {
+    "repo_url": "https://github.com/mesa3d/mesa.git",
+    "repo_name": "mesa",
+    "fixed_hash": "034b220dc4e56d3514ebd2931b363ab90baee895",
+    "buggy_hash": "5bcfe905019b6865439ec9e32ce28a2df9ca8659",
+    "commit_msg": "i965: Fix GLX_MESA_query_renderer video memory on 32-bit.  On modern systems with 4GB apertures the size in bytes is 4294967296 or"
+  },
+  {
+    "repo_url": "https://github.com/Thegrtn/CS404MatrixProject.git",
+    "repo_name": "CS404MatrixProject",
+    "fixed_hash": "c89c3af2ebce22c4b433c77a00f50edeb306f22b",
+    "buggy_hash": "5c3d537d4c618b01d03a2b9d6ad237afceab4526",
+    "commit_msg": "Added a test into each heuristic function to check for integer overflow before pdating the accrued cost."
+  },
+  {
+    "repo_url": "https://github.com/hardwareadictos/gzr_kernel_oneplus_msm8994.git",
+    "repo_name": "gzr_kernel_oneplus_msm8994",
+    "fixed_hash": "95789a928871394d0eb7550458371aa536750983",
+    "buggy_hash": "5d09df1e2e89499945cc8e9498c68193604b79b0",
+    "commit_msg": "msm: kgsl: Fix overflow in sharedmem cache range operation function  There could be possibility of integer overflow on adding size with maximum offset bytes and result in a value smaller than maximum memdesc size.  CRs-Fixed: 1082914 Change-Id: Ie66b3a8ca2ca418a4a52f65987266b8d580c121f Signed-off-by: Sudeep Yedalapure <sudeepy@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Scytheria23/The-Eternal-Crusade.git",
+    "repo_name": "The-Eternal-Crusade",
+    "fixed_hash": "66755eecf117d21504b13a86410aa01cfc44c3ba",
+    "buggy_hash": "5e0485178de0ab794c72d845e331559171301b22",
+    "commit_msg": "Core/Creature: fix integer overflow in Creature::Update leading to endless thrashing of characters database  Closes #19182"
+  },
+  {
+    "repo_url": "https://github.com/FFmpeg/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "679a315424e6ffaafd21ebf7a86108bd4e743793",
+    "buggy_hash": "5f23d8b405fa24496c909f373a1b28454740ef16",
+    "commit_msg": "avformat/oggparsedaala: Check duration for AV_NOPTS_VALUE  This avoids an integer overflow the solution matches oggparsevorbis.c and 45581ed15d2ad5955e24d809820c1675da68f500  Fixes: 700242  Found-by: Thomas Guilbert <tguilbert@google.com> Reviewed-by: Rostislav Pehlivanov <atomnuker@gmail.com> Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "4726eb1a024640a6431126b2fdca49d6b1c0f299",
+    "buggy_hash": "6001089b7c1c2e6d08e6a8548b395292f6a9e147",
+    "commit_msg": "In LEMON limit the size of the grammar file to 100MB. This ensures that the program will never experience integer overflow. To be doubly sure use calloc"
+  },
+  {
+    "repo_url": "https://github.com/samee/obliv-c.git",
+    "repo_name": "obliv-c",
+    "fixed_hash": "58acf179ca8dd9b9d09a9b03941727f7acaa5704",
+    "buggy_hash": "610fc74b95928885e4f2e397fb1d93ec77581609",
+    "commit_msg": "Fixes for integer overflows"
+  },
+  {
+    "repo_url": "https://github.com/kdave/kernel-source.git",
+    "repo_name": "kernel-source",
+    "fixed_hash": "eb4ae7d4086d1858286836a5b84b950c9eb32aad",
+    "buggy_hash": "61c1a3ef4991c73f76d527c7c42d75d9add88dcf",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/DeforaOS/libSystem.git",
+    "repo_name": "libSystem",
+    "fixed_hash": "40e276659bd0586efb4644d8476f8f3bd0b993e5",
+    "buggy_hash": "6324df6d88f6b6a2c634ea08252bf965f8bdf51d",
+    "commit_msg": "Detect integer overflows in string_new_length"
+  },
+  {
+    "repo_url": "https://github.com/gismoZ/android_kernel_xiaomi_msm8956.git",
+    "repo_name": "android_kernel_xiaomi_msm8956",
+    "fixed_hash": "37a0cbed9fc8d32787c17b6d8ba90fce7b05ef50",
+    "buggy_hash": "6473520885222e3007f1eeb038a321ab070ad770",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_hardware_qcom_display.git",
+    "repo_name": "android_hardware_qcom_display",
+    "fixed_hash": "4b21e85e70cb579e0c2fb8abc91c440d64e4cd28",
+    "buggy_hash": "64d9cf8439a31ad5e1a96a09ad4e8d55b8c41546",
+    "commit_msg": "libmemtrack Fix integer overflow in kgsl function  In the kgsl function which gets memory info for a pid there could be possibility of integer overflow in operations with size accounted_sizeand unaccounted_size due to which result might be smaller than these values. External input size is verified and overflow check has been added.  CRs-Fixed 1103020 Change-Id: Ic450e990598777591739635facc08fb7a2e477f9 Signed-off-by: Archana Sriram <apsrir@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/nitrogen-project/android_frameworks_av.git",
+    "repo_name": "android_frameworks_av",
+    "fixed_hash": "396a5706326f7cf6ed8006a11d3251ec27b67b57",
+    "buggy_hash": "65cb362eb27601f6b15c9fd7cebee0eeab918b3b",
+    "commit_msg": "DO NOT MERGE - stagefright: fix integer overflow error am: 1ab38dcf9b am: 65cb362eb2  Change-Id: I41af2987f1d59d6dc6af03cf62925ba1bc4592aa"
+  },
+  {
+    "repo_url": "https://github.com/KDE/krita.git",
+    "repo_name": "krita",
+    "fixed_hash": "26b91a47ff3900cbf64442ea48a3c8243871ab63",
+    "buggy_hash": "65f1b236d6d7de0bae64f8931c24baed560a265f",
+    "commit_msg": "Fix quint8 integer overflow in TestUtil::compareQImages"
+  },
+  {
+    "repo_url": "https://github.com/arter97/caf_msm-3.18.git",
+    "repo_name": "caf_msm-3.18",
+    "fixed_hash": "e25626b16a8b9ea26e29ea8fb0afb55124035454",
+    "buggy_hash": "66b22cc1f1a5cba2c5fb924e445ac48f3195854a",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CRs-Fixed: 897452 Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org> Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Slim80/android_kernel_oneplus_msm8996.git",
+    "repo_name": "android_kernel_oneplus_msm8996",
+    "fixed_hash": "6e4ff7c333480bc62b3e47e276b7cafc06136b9f",
+    "buggy_hash": "672164b0beedb9edce25a3d48aef3fd96acf8f6f",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/LongChair/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "ec849f637e8548ec6c9b6329334944c7c81df443",
+    "buggy_hash": "6871df02d973c9ffc1aa4f6d08fb4b1b63d411be",
+    "commit_msg": "avcodec/h264idct_template: Fix several runtime error: signed integer overflow  Fixes: 652/clusterfuzz-testcase-6174944410992640  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/Jackeagle/kernel_msm-3.10.git",
+    "repo_name": "kernel_msm-3.10",
+    "fixed_hash": "06581be17bc3e2f96367189227ac6d77391439f5",
+    "buggy_hash": "68b745babb441b41165795fa800938308b378f1f",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/zwadar/shiboken.git",
+    "repo_name": "shiboken",
+    "fixed_hash": "8611bda3b346762e0589402f130b73f20dd75914",
+    "buggy_hash": "68d6802ae6f132108870b07627cc00f75eb58104",
+    "commit_msg": "libshiboken: Output a warning when integer overflows occur  Output type and size.  Change-Id: Id24fe755e3be9f8d2afe9c668dafe49ad6ec42c7 Reviewed-by: Christian Tismer <tismer@stackless.com> Reviewed-by: Alexandru Croitor <alexandru.croitor@qt.io>"
+  },
+  {
+    "repo_url": "https://github.com/denniskniep/zap-extensions.git",
+    "repo_name": "zap-extensions",
+    "fixed_hash": "42cd10b7ea984774402d3c1d1c6f7874fe360a2e",
+    "buggy_hash": "6955d99171feb8dc0b01e1690fb52648bbe4d655",
+    "commit_msg": "Merge pull request #51 from msrader/alpha  Fix zaproxy/zaproxy#1846 - Add integer overflow scanner"
+  },
+  {
+    "repo_url": "https://github.com/interpals/uploaderd.git",
+    "repo_name": "uploaderd",
+    "fixed_hash": "8e409bb365f8a42f11f99a4571132ebe70d939ee",
+    "buggy_hash": "69a2a6aef27a51bb7af01072c38efd3faab8be20",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/manover/debian-kernel.git",
+    "repo_name": "debian-kernel",
+    "fixed_hash": "394a75145ad114ae4471933666e99679b7cdfae2",
+    "buggy_hash": "69eb845b865322c419e1aecfc8752dcfeb426a49",
+    "commit_msg": "linux"
+  },
+  {
+    "repo_url": "https://github.com/mrhota/reference.git",
+    "repo_name": "reference",
+    "fixed_hash": "2a6e20afda4ef2494218a691156fc0aad276c93f",
+    "buggy_hash": "6b0de90d87dda15e323ef24cdf7ed873ac5cf4d3",
+    "commit_msg": "Add details about integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/vivien/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "13e2d5187f6b965ba3556caedb914baf81b98ed2",
+    "buggy_hash": "6bd845d1cf98b45c634baacb8381436dad3c2dd0",
+    "commit_msg": "bna: integer overflow bug in debugfs  We could allocate less memory than intended because we do:   bnad->regdata = kzalloc"
+  },
+  {
+    "repo_url": "https://github.com/Kwiboo/linux-rockchip.git",
+    "repo_name": "linux-rockchip",
+    "fixed_hash": "44eed6f024913d16004ce290d986dc59f4408c06",
+    "buggy_hash": "6c102d02d6246cee2058db338773cd8486fbc7b5",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/uname-yang/kafka.git",
+    "repo_name": "kafka",
+    "fixed_hash": "69d3af8be26c8f3abb2c9dfd43d2462d5aa27c69",
+    "buggy_hash": "6c1478d19f5a9c8dede9e7c3b047533ba61cc731",
+    "commit_msg": "MINOR: fix integer overflow in simple benchmark MB/sec calculation  Author: Damian Guy <damian.guy@gmail.com>  Reviewers: Ismael Juma <ismael@juma.me.uk>  Closes #2523 from dguy/minor-streams-bench"
+  },
+  {
+    "repo_url": "https://github.com/arvinquilao/android_kernel_google_seed.git",
+    "repo_name": "android_kernel_google_seed",
+    "fixed_hash": "212036ba481b2e846653aec02f74173b05eee2ce",
+    "buggy_hash": "6c3a5788c2b4ebe2ef4d57f655d2d483d65511dc",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/SubhamSatyajeet/JavaRough.git",
+    "repo_name": "JavaRough",
+    "fixed_hash": "58389bab4403593d2e969ceacf5b5c4f10896924",
+    "buggy_hash": "6d1cef5cc2d5271cc4fddd5cd4b516c6f4df62c9",
+    "commit_msg": "Learned about integer overflows and started solving Chapter 2 exercises"
+  },
+  {
+    "repo_url": "https://github.com/MoKee/android_kernel_motorola_msm8226.git",
+    "repo_name": "android_kernel_motorola_msm8226",
+    "fixed_hash": "ce9e83751e9a54d0766000befdcca2054b9d5cae",
+    "buggy_hash": "6d2214c22a799c5bfb8d99f65a5baa28ea556773",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> "
+  },
+  {
+    "repo_url": "https://github.com/tianocore/edk2.git",
+    "repo_name": "edk2",
+    "fixed_hash": "e51b591e2dc34f1e10568196cff733be2c6bcd16",
+    "buggy_hash": "6d644dd0d0c20e0dd7978bf7c7728ae54cf6cbe8",
+    "commit_msg": "NetworkPkg/HttpDxe: Fix HTTP download OS image over 4G size failure  UINT32 integer overflow will happen once the download OS image over 4G size. This patch is to fix this issue.  Cc: Ye Ting <ting.ye@intel.com> Cc: Fu Siyuan <siyuan.fu@intel.com> Cc: Zhang Lubo <lubo.zhang@intel.com> Contributed-under: TianoCore Contribution Agreement 1.0 Signed-off-by: Wu Jiaxin <jiaxin.wu@intel.com> Reviewed-by: Fu Siyuan <siyuan.fu@intel.com> Reviewed-by: Ye Ting <ting.ye@intel.com> Reviewed-by: Sriram Subramanian <sriram-s@hpe.com> "
+  },
+  {
+    "repo_url": "https://github.com/alpinelinux/aports.git",
+    "repo_name": "aports",
+    "fixed_hash": "251f7b99aba7d81c9ef398c6f3ec41f06c2ba661",
+    "buggy_hash": "6e43b8e910ddb974b60364e4a18c31ff9c22b9e8",
+    "commit_msg": "main/qemu: security fixes #6921  CVE-2016-7994: Qemu virtio-gpu: memory leak in virtio_gpu_resource_create_2d CVE-2016-7995: Qemu: usb: hcd-ehci: memory leak in ehci_process_itd CVE-2016-8576: Qemu: usb: xHCI: infinite loop vulnerability in xhci_ring_fetch CVE-2016-8577: Qemu: 9pfs: host memory leakage in v9fs_read CVE-2016-8578: Qemu: 9pfs: potential NULL dereferencein 9pfs routines CVE-2016-8668: Qemu: net: OOB buffer access in rocker switch emulation CVE-2016-8909: Qemu: audio: intel-hda: infinite loop in processing dma buffer stream CVE-2016-8910: Qemu: net: rtl8139: infinite loop while transmit in C+ mode CVE-2016-9101: Qemu: net: eepro100 memory leakage at device unplug CVE-2016-9102: Qemu: 9pfs: memory leakage when creating extended attribute CVE-2016-9103: Qemu: 9pfs: information leakage via xattribute CVE-2016-9104: Qemu: 9pfs: integer overflow leading to OOB access CVE-2016-9105: Qemu: memory leakage in v9fs_link CVE-2016-9106: Qemu: 9pfs: memory leakage in v9fs_write CVE-2017-5525: Qemu: audio: memory leakage in ac97 device CVE-2017-5552: Qemu: display: virtio-gpu-3d: memory leakage in virgl_resource_attach_backing CVE-2017-5578: Qemu: display: virtio-gpu: host memory leakage in virtio_gpu_resource_attach_backing CVE-2017-5579: Qemu: serial: host memory leakage in 16550A UART emulation CVE-2017-5667: Qemu: sd: sdhci OOB access during multi block SDMA transfer CVE-2017-5856: Qemu: scsi: megasas: host memory leakage in megasas_handle_dcmd CVE-2017-5857: display: virtio-gpu-3d: host memory leakage in virgl_cmd_resource_unref CVE-2017-5898: Qemu: usb: integer overflow in emulated_apdu_from_guest CVE-2017-5931: virtio: integer overflow in handling virtio-crypto requests CVE-2017-2615: Qemu: display: cirrus: oob access while doing bitblt copy backward mode CVE-2017-2620: Qemu: display: cirrus: potential arbitrary code execution via cirrus_bitblt_cputovideo CVE-2017-6505: usb: an infinite loop issue in ohci_service_ed_list"
+  },
+  {
+    "repo_url": "https://github.com/chain/chain.git",
+    "repo_name": "chain",
+    "fixed_hash": "68ff7e442a6956541b5dcd372b88a2921d6c6baa",
+    "buggy_hash": "6f8f079ab44194ccacfe45d2e847c9e4c5808e02",
+    "commit_msg": "protocol/vm: prevent integer overflow in PUSHDATA4  Since OP_PUSHDATA4 takes a 32-bit integer for its length calculating the length of the instruction may overflow. Use checked addition when calculating the length of the instruction. The other PUSHDATA opcodes should be okay because they only parse 16-bit or less integers.  Fix #1008."
+  },
+  {
+    "repo_url": "https://github.com/openssl/openssl.git",
+    "repo_name": "openssl",
+    "fixed_hash": "8b6277538350008a19f8015895972a5edf13da11",
+    "buggy_hash": "6fb4f30611e8e5a5598234463f644cb950de760d",
+    "commit_msg": "Fix a possible integer overflow in long_c2i  Credit to OSS-Fuzz for finding this.  Reviewed-by: Matt Caswell <matt@openssl.org> Reviewed-by: Richard Levitte <levitte@openssl.org> "
+  },
+  {
+    "repo_url": "https://github.com/dorimanx/DORIMANX-OP3T-KERNEL.git",
+    "repo_name": "DORIMANX-OP3T-KERNEL",
+    "fixed_hash": "a7094179353c40693e5fc5c92f8420abe6b841aa",
+    "buggy_hash": "6fb53309aeb5a5befb6d960192848adfae8d742d",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CRs-Fixed: 897452 Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org> Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Francisco Franco <franciscofranco.1990@gmail.com>"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_xiaomi_msm8916.git",
+    "repo_name": "android_kernel_xiaomi_msm8916",
+    "fixed_hash": "34c6dc227dee9a7c5f7b48c2b3a71e03ed118cdb",
+    "buggy_hash": "7100aaa8e5692443ba01bdd17aace29b625f9747",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/TeamButter/android_kernel_sony_msm8930.git",
+    "repo_name": "android_kernel_sony_msm8930",
+    "fixed_hash": "c736b663029d10646453501e5b68c9873416ab4e",
+    "buggy_hash": "714f06aec3b08db5fd818f4d7a40b1af22a42d44",
+    "commit_msg": "timekeeping: Cast raw_interval to u64 to avoid shift overflow  commit 5b3900cd409466c0070b234d941650685ad0c791 upstream.  We fixed a bunch of integer overflows in timekeeping code during the 3.6 cycle. I did an audit based on that and found this potential overflow.  Signed-off-by: Dan Carpenter <dan.carpenter@oracle.com> Acked-by: John Stultz <johnstul@us.ibm.com> Link: http://lkml.kernel.org/r/20121009071823.GA19159@elgon.mountain Signed-off-by: Thomas Gleixner <tglx@linutronix.de> Cc: Ben Hutchings <ben@decadent.org.uk> "
+  },
+  {
+    "repo_url": "https://github.com/yandex/ClickHouse.git",
+    "repo_name": "ClickHouse",
+    "fixed_hash": "eb4f895ea5c3af80403101da1ba01110fa68ca3a",
+    "buggy_hash": "7183965ae1bcb62dd6c3ce3ac369a1ff5b772ae5",
+    "commit_msg": "fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/ElektraInitiative/libelektra.git",
+    "repo_name": "libelektra",
+    "fixed_hash": "f647f55ceea6193d880745dee66c26769a79b785",
+    "buggy_hash": "71d45b5475bcab0707614ebdf28c9e494533f0fd",
+    "commit_msg": "Complete: Fix signed integer overflow  Before this change the command `kdb complete /` would show the following warning:  ``` complete.cpp:128:75: runtime error: signed integer overflow:  2147483647 + 1 cannot be represented in type int ```   if we enabled the address sanitizer."
+  },
+  {
+    "repo_url": "https://github.com/WYHNUS/Query-Processing.git",
+    "repo_name": "Query-Processing",
+    "fixed_hash": "5c5e538355d19bd8cc332b96b982081b1c1e7284",
+    "buggy_hash": "7302aa0419f797c09cb9e33f8a2dea867a5eecfd",
+    "commit_msg": "fix integer overflow problem"
+  },
+  {
+    "repo_url": "https://github.com/davesteele/cryfs.git",
+    "repo_name": "cryfs",
+    "fixed_hash": "46183976ee8a085199e0337020a5ee67fa937516",
+    "buggy_hash": "733622cb98a9bb86d152e5e9886a119b220cc13a",
+    "commit_msg": "Fix missing virtual destructor and potential integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/quantcast/qfs.git",
+    "repo_name": "qfs",
+    "fixed_hash": "830ea11a40c89c1b70c1e4f6eb8fc245512099c2",
+    "buggy_hash": "739bf0dbe3a38365ff2920577e80f30f8b2487c0",
+    "commit_msg": "Disk IO library: fix integer overflow in IO buffer pool get method with buffer pool larger than 4GB."
+  },
+  {
+    "repo_url": "https://github.com/ResurrectionRemix/frameworks_av.git",
+    "repo_name": "frameworks_av",
+    "fixed_hash": "79f73cb0a14855e24f490468b9f83cdc2a66c540",
+    "buggy_hash": "75fc3c4b8be74f8dd7e98a73ce31291ee88fe6d7",
+    "commit_msg": "Merge DO NOT MERGE - stagefright: fix integer overflow error into lmp-dev am: 8f4b1a7de0 -s ours am: 64c06e051a am: bbc4b190d0 am: 559b777d4f -s ours am: 1d39eeea17 am: 3f5bbfce01 am: 94ec2dd388 am: 2e7021aeae -s ours am: 53424fe60e am: 18056e4013  Change-Id: I92c61d1d5f660610a4270fcbf4a972a6257483ff"
+  },
+  {
+    "repo_url": "https://github.com/JackDunaway/featherweight.git",
+    "repo_name": "featherweight",
+    "fixed_hash": "70c420b4af8f8e89b77200b725eeca1b0a13d295",
+    "buggy_hash": "77beee65358559a42985091f22a2944713c58aaf",
+    "commit_msg": "*Breaking changes.* Major upgrade.  Upgrades: 1. Wire either a string or a FTW-JSON reference object type. Using the reference object type is likely far more performant in cases where many deserializations are required. 2. Ability to consume elements from the JSON which is an atomic fetch-and-delete. 3. Ability to inspect the actual type of JSON element was selected. This is useful for determining whether e.g. the element was not found or found but of a different type than expected. 4. Better define integer overflow. For instance if a JSON value would overflow the requested type the default value will be silently kept rather than overflowing or pinning the value to a limit.  Also removed ability to treat Picture datatype as a Base64-encoded string removed ability to fetch any reference types"
+  },
+  {
+    "repo_url": "https://github.com/MoKee/android_kernel_samsung_apq8084.git",
+    "repo_name": "android_kernel_samsung_apq8084",
+    "fixed_hash": "69661b03d04ba5da29ee9a9bf91bea402c151546",
+    "buggy_hash": "77e7eddb8133771b58063faf567891643dfbd34a",
+    "commit_msg": "ASoC: msm: audio-effects: misc fixes in h/w accelerated effect  Adding integer overflow check in h/w accelerated effect driver.  Bug: 28470967 Change-Id: I17d4cc0a38770f0c5067fa8047cd63e7bf085e48 CRs-Fixed: 1006609 Signed-off-by: Weiyin Jiang <wjiang@codeaurora.org> Signed-off-by: vivek mehta <mvivek@codeaurora.org> Signed-off-by: Corinna Vinschen <xda@vinschen.de>"
+  },
+  {
+    "repo_url": "https://github.com/dorimanx/DORIMANX-OP3T-KERNEL.git",
+    "repo_name": "DORIMANX-OP3T-KERNEL",
+    "fixed_hash": "0a0584d9ec3941ebb16f1190f1a7e96e10ce0600",
+    "buggy_hash": "79b17f09ab50a74d6de2374565ba42c7421c35ad",
+    "commit_msg": "qcacld-2.0: Avoid integer overflow in wma_enable_arp_ns_offload  In the function wma_enable_arp_ns_offload"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "1a5e4fdc88dd8aca912dbbcb359ce1d13ee6ae94",
+    "buggy_hash": "7b59e6b444e5dab3689cf29b86242e08f2198c74",
+    "commit_msg": "Merge changes I504ad591Iaaa6f5b3 into mnc-dr-dev-qcom-lego  * changes:  msm: cpp: Fix for integer overflow in cpp  msm: camera: eeprom: Validate the power setting size"
+  },
+  {
+    "repo_url": "https://github.com/BirdSanctuary/kernel_oneplus_onyx.git",
+    "repo_name": "kernel_oneplus_onyx",
+    "fixed_hash": "2a3da1bb21ded87a5be07fb1672afc287872605d",
+    "buggy_hash": "7c3e2c0c15076a78eda431ca6d2731046aa6764c",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "ef6520d94986f332e82b27511012fbdd8baf6c63",
+    "buggy_hash": "7c4c307c43dedb68ea01543bf9f5a5434b0fb87d",
+    "commit_msg": "msm: mdss: Handling possible integer overflow  fudge_factor calculation can suffer from integer overflow as numer and denom are user controlled. Hence this change will first check for the overflow and return immediately.  CRs-Fixed: 1110860 Change-Id: I3fab3edd4515d7a4c67f29d68b2039f234b03612 Signed-off-by: Harsh Sahu <hsahu@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/nitrogen-project/android_frameworks_av.git",
+    "repo_name": "android_frameworks_av",
+    "fixed_hash": "8e3a746f8cfb60936b3899719a6b2d9a6bf7fe13",
+    "buggy_hash": "7ccacce12a9408780a1f8b68999d8dcee06300cd",
+    "commit_msg": "DO NOT MERGE - stagefright: fix integer overflow error am: 2d58796ded am: 450fd950d0 am: a7a43eb646 -s ours am: 63f8141861 am: 761a18edbe am: a577e1c6ee am: 3148acf4a8 -s ours am: c8b94e7b83 am: 785d9bf0b2  Change-Id: I3363d1c06add9eed30b7b06a5c15a0573e5f4904"
+  },
+  {
+    "repo_url": "https://github.com/aorenste/hhvm.git",
+    "repo_name": "hhvm",
+    "fixed_hash": "93ca64b43748d06076c8baacee1be3f0f9edaf34",
+    "buggy_hash": "7efd075fd18249d8060cc57963039224b09322a2",
+    "commit_msg": "Signed integer overflow in _gd2GetHeader  Summary: This mitigates it.  Reviewed By: mofarrell  Differential Revision: D4678167  fbshipit-source-id: abc6f4d0019a59d89f8a37f323de9a5a906f377f"
+  },
+  {
+    "repo_url": "https://github.com/GtrCraft/Optimus_Lux.git",
+    "repo_name": "Optimus_Lux",
+    "fixed_hash": "31cdc93ffca61ce5dd320a8663069be9633eb26f",
+    "buggy_hash": "7f3617cf21f0d48d4b1853c2d0a61c5361476a28",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/kdave/kernel-source.git",
+    "repo_name": "kernel-source",
+    "fixed_hash": "560498d4a9a33ccaf4016993435a543f49501508",
+    "buggy_hash": "7fdc027e620755f944da54a537cc74a8e0fa7a16",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/endrift/mgba.git",
+    "repo_name": "mgba",
+    "fixed_hash": "4452f381038ae1e234cd46c81d15d23b91fafdef",
+    "buggy_hash": "80593c96115b7f958ca5716a884e00236662f1b9",
+    "commit_msg": "GB GBA Video: Fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "00a13b597d4c987a1fbb2188e0d86ddf197c2157",
+    "buggy_hash": "813080325f5a9c780f4b2a141358636b1210da7c",
+    "commit_msg": "Fix some integer overflow problems that can occur when using large langauge id values."
+  },
+  {
+    "repo_url": "https://github.com/web-push-libs/ecec.git",
+    "repo_name": "ecec",
+    "fixed_hash": "28e5c2477cae5a20887d87428e423c48183e1f67",
+    "buggy_hash": "8197205fd328b619a004e367b9627dbb389cab58",
+    "commit_msg": "Fix integer overflows in chunking bounds checks."
+  },
+  {
+    "repo_url": "https://github.com/ResurrectionRemix/frameworks_av.git",
+    "repo_name": "frameworks_av",
+    "fixed_hash": "a1eae21f45c85d0fb8d7d456fd19c34db8f6d156",
+    "buggy_hash": "82a7b7796756dbb757915f67a9c4da89b9fdd6f1",
+    "commit_msg": "DO NOT MERGE - stagefright: fix integer overflow error am: 17a10c50e2 am: 8df5df78a3 am: e40e452a3a -s ours am: 87d4805d94 -s ours am: 3041de70c5 am: 0c51e9905d am: f3da79cfea -s ours am: a47d63df6f am: b88ce695e4 am: c9919f953a am: 3aa706059b -s ours am: 09170c0ec5 am: 82a7b77967  Change-Id: I6c2b4a338236f66da809d006e0643050e537fb45"
+  },
+  {
+    "repo_url": "https://github.com/OSEC-pl/backports-iwlwifi.git",
+    "repo_name": "backports-iwlwifi",
+    "fixed_hash": "9d7d80b5e47771c95299a0e2e3491ab8fadf4cfb",
+    "buggy_hash": "82b85c69ffc9356de9167dcb3841bccfba179d8e",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/bphinz/tigervnc.git",
+    "repo_name": "tigervnc",
+    "fixed_hash": "c26b4b3bd20b40ca5f1ae9477164473fbd94995d",
+    "buggy_hash": "83722048ddbe3eafe41bdccca4d706e98b25103b",
+    "commit_msg": "Limit size of cursor accepted by client.  Width and height of a cursor are received as U16 from network. Accepting full range of U16 values can cause integer overflows in multiple places.  The worst is probably VLA in CMsgReader::readSetXCursor:  rdr::U8 buf"
+  },
+  {
+    "repo_url": "https://github.com/bloomberg/bde.git",
+    "repo_name": "bde",
+    "fixed_hash": "8c541b433c850c08d11e8ad41daf6425e802d31d",
+    "buggy_hash": "8593bea74852fc014bce0f41f17d41dda4b34ac4",
+    "commit_msg": "Merge pull request #664 from afeher/fix-bslstl_function-warning  Fix integer overflow warning on Windows/MSVC."
+  },
+  {
+    "repo_url": "https://github.com/mapr/hadoop-common.git",
+    "repo_name": "hadoop-common",
+    "fixed_hash": "747455a13b710266e1084d2f5a3b18ba14b386e5",
+    "buggy_hash": "866dce4e8e105d0e2c7e041b5d30213536a61702",
+    "commit_msg": "HADOOP-11901. BytesWritable fails to support 2G chunks due to integer overflow. Contributed by Reynold Xin."
+  },
+  {
+    "repo_url": "https://github.com/apisnetworks/apnscp-modules.git",
+    "repo_name": "apnscp-modules",
+    "fixed_hash": "56664ac42ef4628f35c8a4a26036d37002fbe034",
+    "buggy_hash": "86f1d1b6ec964093ce6907d1a52ba7864680f2c3",
+    "commit_msg": "NEW: admin preferences file via appliance/.config/ FIX: get_login_history"
+  },
+  {
+    "repo_url": "https://github.com/anssih/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "7e9ba78f6bd10edae77d1126ada109709e981e9f",
+    "buggy_hash": "87eb3749708c0eb2978f4812c7be2a4af667fdb7",
+    "commit_msg": "avcodec/flacdsp: Fix: runtime error: signed integer overflow: -1027555328 + -1226681270 cannot be represented in type int  Fixes: 673/clusterfuzz-testcase-5948736536576000  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Reviewed-by: Paul B Mahol <onemda@gmail.com> Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/jsonn/pkgsrc.git",
+    "repo_name": "pkgsrc",
+    "fixed_hash": "ec726794c99504b524f4e58b330f12bf1310828b",
+    "buggy_hash": "8831ab02b638fc77d0804df61187402a9b63cfff",
+    "commit_msg": "Update to Botan 2.1.0 the new stable branch.  Some of the more important changes:  - Fix incorrect truncation in Bcrypt. Passwords in length between 56 and  72 characters were truncated at 56 characters. Found and reported by  Solar Designer."
+  },
+  {
+    "repo_url": "https://github.com/Daan-K/FastAnts.git",
+    "repo_name": "FastAnts",
+    "fixed_hash": "47a0776a58e23a9a33e4d28dcc20155895111a9d",
+    "buggy_hash": "88f2e231bf9199d284240df1f6e5d1ffc738c4d5",
+    "commit_msg": "Fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/toddgaunt/yorha.git",
+    "repo_name": "yorha",
+    "fixed_hash": "65ba8e9143b491508347d4c25dcc9027a141eb9c",
+    "buggy_hash": "898ae0cee36c8a0760a976aa6abd00c29c81822c",
+    "commit_msg": "Add safe_add function to prevent internal integer overflow errors"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "5be13fab6630275fc46c232780c3f764909f6a3e",
+    "buggy_hash": "8a78e9c22159df17085ad78372ec5b3f2f8264ad",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/Abhinai99/android_kernel_motorola_msm8916.git",
+    "repo_name": "android_kernel_motorola_msm8916",
+    "fixed_hash": "f0b37da6b291c6c04572cdfe2a59f47262c9383b",
+    "buggy_hash": "8a7da94ea263a04957f6c99fa88be29dbd7e8e21",
+    "commit_msg": "msm: kgsl: Check for integer overflow before allocating memory  In _kgsl_sharedmem_page_alloc"
+  },
+  {
+    "repo_url": "https://github.com/redox-os/jpeg-decoder.git",
+    "repo_name": "jpeg-decoder",
+    "fixed_hash": "393a1832884957c16ef3a554b2af8274caeabc3b",
+    "buggy_hash": "8a8d3310bf6ff7c277e3ebfcf44fb5b08ea21eab",
+    "commit_msg": "Fix a possible integer overflow in derive_huffman_codes"
+  },
+  {
+    "repo_url": "https://github.com/zen-kernel/zen-kernel.git",
+    "repo_name": "zen-kernel",
+    "fixed_hash": "4ddd24d54fedff301e8f020d7b9f70116383af31",
+    "buggy_hash": "8b298d3a0bd5feeb47129c4889356b38b78ab231",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/KDE/konquest.git",
+    "repo_name": "konquest",
+    "fixed_hash": "064c74d30e7a94554c27980e2934441f1b03d6c0",
+    "buggy_hash": "8bfef78dd669d58ed6df8894c316497eb3f2cdd1",
+    "commit_msg": "Use long long for fleet size to avoid integer overflow.  Well with the number of ships in the fleet rising exponentially it will still eventually overflow but a bit later...  BUG: 374696"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_oppo_msm8939.git",
+    "repo_name": "android_kernel_oppo_msm8939",
+    "fixed_hash": "b2c273cdc0358279778b4d1eb3e9a002e6b65acf",
+    "buggy_hash": "8c08acafaa691965f71c1560651169d8ed217c15",
+    "commit_msg": "msm mdss Fix possible integer overflow  Avoid possible integer overflow while validating mdp3 lut config parameters.  Change-Id Ie3f59748e613fbbf755a98dcc688491a8c4e2cca CRs-Fixed 1104664 Signed-off-by Sravan Kumar D.V.N <sravank1@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/OpenAutomationTechnologies/openPOWERLINK_V2.git",
+    "repo_name": "openPOWERLINK_V2",
+    "fixed_hash": "1522215b7c197aa1229029c8b11be30580aa6357",
+    "buggy_hash": "8e06a197a043aed985eecb7f4acc398f81561aae",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/Slim80/Imperium_Kernel_LGH811_MM.git",
+    "repo_name": "Imperium_Kernel_LGH811_MM",
+    "fixed_hash": "60e485522f0cd60d5a60730ba1d49084d62a9782",
+    "buggy_hash": "8e3e9a981e501dff3c5d789a32a00dc7906464e4",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/coreutils/gnulib.git",
+    "repo_name": "gnulib",
+    "fixed_hash": "30784c47105573c213cda1b3c4f397c8df837966",
+    "buggy_hash": "8fa38e3ebd5ee16c2166e14b55718aa5f28a0cd9",
+    "commit_msg": "parse-datetime: overflow and debug cleanups  This long patch was triggered by this bug report from Ruediger Meier: http://lists.gnu.org/archive/html/bug-gnulib/2017-04/msg00028.html I fixed the bug he noted then found some others nearby and then still others. Oh my goodness there were a lot of bugs. I cleaned up some of the code to follow GNU standards while I was at it. * lib/parse-datetime.y"
+  },
+  {
+    "repo_url": "https://github.com/cockroachdb/cockroach.git",
+    "repo_name": "cockroach",
+    "fixed_hash": "11dc0eb2ba30a4d99c68f5efe5617e44f87703f8",
+    "buggy_hash": "913d798aa338a99bfef811ee768d518a527b4b33",
+    "commit_msg": "Merge pull request #14782 from mjibson/norm-fold  sql: detect integer overflow in + - "
+  },
+  {
+    "repo_url": "https://github.com/Ybalrid/BtOgre21.git",
+    "repo_name": "BtOgre21",
+    "fixed_hash": "8161b1958e5f0562bdd64a175de5f9f42d2b1ac3",
+    "buggy_hash": "91c29b4d86989a43163ac32fcabc215a68d29e1e",
+    "commit_msg": "prevent potential integer overflow while reading really complex objects"
+  },
+  {
+    "repo_url": "https://github.com/Buck-Rogers/buck.git",
+    "repo_name": "buck",
+    "fixed_hash": "45f09618f22f0a59d872818f28fc2a938cc98311",
+    "buggy_hash": "923dc447eaa8e017985b2afbbb12dd1283fbea0e",
+    "commit_msg": "Prevent integer overflow in ReadVarInt.  We dont normally use ReadVarInt from untrusted inputs but we might  see this in the case of corruption.  This is exposed in test_bitcoin_fuzzy."
+  },
+  {
+    "repo_url": "https://github.com/jia200x/RIOT.git",
+    "repo_name": "RIOT",
+    "fixed_hash": "13286cd89f482ce53b8c8b4c2f7d7102ef4b0a79",
+    "buggy_hash": "924fff75132e72f1c5afc588617f8ffa3ba9228e",
+    "commit_msg": "tests/driver_mq3: fix build upon avr 8 bits MCU  fix tests/driver_mq3/main.c:58:27: error: integer overflow in expression"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_samsung_apq8084.git",
+    "repo_name": "android_kernel_samsung_apq8084",
+    "fixed_hash": "93c0a2fb0fb3db8526094c17a22793f9d8507470",
+    "buggy_hash": "940e782b18ad6a9b407ee6f1ed46fa7b44d383e7",
+    "commit_msg": "FROMLIST: ALSA: compress: fix an integer overflow check  I previously added an integer overflow check here but looking at it now its still buggy.  The bug happens in snd_compr_allocate_buffer"
+  },
+  {
+    "repo_url": "https://github.com/razorloves/android_kernel_huawei_angler.git",
+    "repo_name": "android_kernel_huawei_angler",
+    "fixed_hash": "4d25122563533787235e75afef9b9a147fd77840",
+    "buggy_hash": "944926f924f01613759a62eb3f509374873ef5bd",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/alaahl/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "855f9906bfec16271e284fa093b7d86e5a02e2f8",
+    "buggy_hash": "951b6c80ddb92ff4cb87945f35bdf456fafa5351",
+    "commit_msg": "Merge remote-tracking branch origin/net-next-mlx5 into netdev-next  * origin/net-next-mlx5:  net/mlx5e: Show board id in ethtool driver information  net/mlx5e: Change FW sub_minor display to 4 zeros padding  net/mlx5e: Make mlx5e_modify_rqs_vsd a static function  net/mlx5e: Add support for RXFCS feature flag  net/mlx5: Update the list of the PCI supported devices  net/mlx5e: Add offloading of E-Switch TC pedit"
+  },
+  {
+    "repo_url": "https://github.com/XPerience-AOSP-Lollipop/android_kernel_motorola_msm8953.git",
+    "repo_name": "android_kernel_motorola_msm8953",
+    "fixed_hash": "e6934068caa973e4e3186232b5a549058bbea787",
+    "buggy_hash": "981ee273324b8f94865b9c9939a14336911b239f",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/manover/debian-kernel.git",
+    "repo_name": "debian-kernel",
+    "fixed_hash": "97f3c82661e8e9572a74d9e1693ea86e2028c003",
+    "buggy_hash": "9852d52ba935f2173703b5e9adde828f0a2956a8",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "79ba2aef843dd3ec2f19e19fa1cebfba8f57fa26",
+    "buggy_hash": "98a4e35008737061cd997e2067f362bb40a720eb",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/manover/debian-kernel.git",
+    "repo_name": "debian-kernel",
+    "fixed_hash": "51c8275a3652429f68bf7dec4ccffd1821f016d3",
+    "buggy_hash": "98ae6e65274d7e38d95937e88874977a203291b1",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/csbrown/CAG.git",
+    "repo_name": "CAG",
+    "fixed_hash": "d66b50228c818de2c107778aefc5c1114de6b0ff",
+    "buggy_hash": "9a59265aff24fac3dac437cced7f69894c0edd77",
+    "commit_msg": "fixing integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "8b4daf9ac257c9628462fc2fba2afdab898295dc",
+    "buggy_hash": "9a64f3b0ff57ea50018bdc5ca70432e8156ce0d8",
+    "commit_msg": "In the lemon parser generator change all hashes to unsigned to avoid potential problems with signed integer overflow."
+  },
+  {
+    "repo_url": "https://github.com/bear2b/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "08117a40157464f8a9dcc2df393fa5fe299c1e98",
+    "buggy_hash": "9c7ee37490d21350ab1a2e07069284daf1943e52",
+    "commit_msg": "avcodec/h264: Check weight values to be within the specs limits.  Fixes: integer overflows Fixes: 911/clusterfuzz-testcase-5415105606975488  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Reviewed-by: Ronald S. Bultje <rsbultje@gmail.com> Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/ivanimanishi/gaffer.git",
+    "repo_name": "gaffer",
+    "fixed_hash": "dc43c3a6f77799fda36f125b51dcd63bc9dfd2f8",
+    "buggy_hash": "9ce27c9a4dfd9f1c02f586e10334e8f9c15a2135",
+    "commit_msg": "Crop : Dont offset empty data windows  With the help of integer overflow this could make very large non-empty data windows."
+  },
+  {
+    "repo_url": "https://github.com/ngg/protobuf.git",
+    "repo_name": "protobuf",
+    "fixed_hash": "4c5d3eddf99fea6ba652a487d6e7690b51e8aa23",
+    "buggy_hash": "9d709f446f18b672edff81ee2d3f9d6516465d8c",
+    "commit_msg": "Fix integer overflow in FastUInt32ToBufferLeft  If digits > 2 and int is 32 bit line 999 overflows. It has been fixed internally in CL 41203823."
+  },
+  {
+    "repo_url": "https://github.com/KineticTheory/Draco.git",
+    "repo_name": "Draco",
+    "fixed_hash": "1aef98ff56392bdd5ea0e1f1aed88aaed75ed35f",
+    "buggy_hash": "9eb0af377dc2de4163ced424755013ba35197d38",
+    "commit_msg": "Change Packing_Utils to use 64-bit integers to prevent overflow.  + An integer overflow bug was discovered in this header when used by Jayenne.  When packing enough IMC particles the end_ptr could exceed 2^31-1 causing an  integer overflow and eventually a software crash. + This change is based on a patch provided by Matt Cleveland. All pointer  arithmetic will now use uint64_t data types. In most existing cases regular  C int types will be promoted to uint64_t without issues."
+  },
+  {
+    "repo_url": "https://github.com/DD3Boh/android_kernel_zuk_msm8996.git",
+    "repo_name": "android_kernel_zuk_msm8996",
+    "fixed_hash": "65af7e92e169b0d7edb7136039c7be0f34896fc4",
+    "buggy_hash": "9ee84b986c25c2f573b71713d3f74552739e9d0f",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CRs-Fixed: 897452 Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org> Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Francisco Franco <franciscofranco.1990@gmail.com>"
+  },
+  {
+    "repo_url": "https://github.com/apache/kudu.git",
+    "repo_name": "kudu",
+    "fixed_hash": "086d82fe3f1636d7a9d0b4d763c178e4641c5768",
+    "buggy_hash": "9eebcdc7974bca215b6ecdb32d78a4d10713fc2b",
+    "commit_msg": "KUDU-1933. consensus: Avoid and repair integer overflow in log index  We observed a crash on a long-running master server that looked like the following:   F0308 00:25:53.568773 7655 log_index.cc:171"
+  },
+  {
+    "repo_url": "https://github.com/PowerDNS/pdns.git",
+    "repo_name": "pdns",
+    "fixed_hash": "2d5f3ccb69ad71ced929e429638a6b1d1acc85d6",
+    "buggy_hash": "9f53c7fd603293a9837bdd18b6beaa25ea1b2e38",
+    "commit_msg": "Merge pull request #5234 from aerique/bugfix/5054-dnsdist-query-counters-integer-overflows  Bugfix/5054 dnsdist query counters integer overflows"
+  },
+  {
+    "repo_url": "https://github.com/mirror/chromium.git",
+    "repo_name": "chromium",
+    "fixed_hash": "417c3dbd762ea59e53b3572c4e18b921ab0f1d40",
+    "buggy_hash": "9f5f87932f9305376c822c9469ba9e23dd1c74ad",
+    "commit_msg": "Roll src/third_party/libvpx/source/libvpx/ 6af42f510..f22b828d6"
+  },
+  {
+    "repo_url": "https://github.com/ektrah/nsec.git",
+    "repo_name": "nsec",
+    "fixed_hash": "9b04177e74a35b1583a33e3b7c01c702fec4d46a",
+    "buggy_hash": "a12d0c6f6102b14c9757d527451199b9aa129976",
+    "commit_msg": "Fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/koreader/koreader.git",
+    "repo_name": "koreader",
+    "fixed_hash": "76f6b49731e3541b3e605dac96e659ed25b33e11",
+    "buggy_hash": "a192178bf6353f1c6220c6ce0417881a8e325456",
+    "commit_msg": "Fix crash with kopt semi-auto crop on blank page  When such blank page has only a few black pixels"
+  },
+  {
+    "repo_url": "https://github.com/dagf2101/android_kernel_xiaomi_msm8953.git",
+    "repo_name": "android_kernel_xiaomi_msm8953",
+    "fixed_hash": "3183de6d61f1fac6e8d7a33ba51f5b51e6e0b9b1",
+    "buggy_hash": "a24dbbc431ee0c617b04310c0650df6c2e064dec",
+    "commit_msg": "Promotion of kernel.lnx.3.18.c2-170330.1.  CRs Change ID 2003798 I332e0424e57bb14b481a740604a09350e6f029a8 msm: camera: isp: Handle array out of bounds 1104664 Ie3f59748e613fbbf755a98dcc688491a8c4e2cca msm: mdss: Fix possible integer overflow 2009016 I614561c5f9bc996689129bc098baaffc9b59c377 soc: qcom: Avoid possible buffer overflow in service-loc 2006169 2005647 If5927e06e70cce4afb0ae9f2cdfec80f76f83771 msm: isp: fix for potentitial array out of bound access 1116463 I97a90a154237343d4aaf237c11f525bcc2c3a8e3 msm: mdss: fix race condition in mdp debugfs 2006913 I7228d893ef757c814b26745663270b8a461b1728 usb: dwc3: Replace sscanf with kstrtou8_from_user 1099288 Ia9b747dcf86b448656a5d3676455ccb4eccd4e5a msm: camera: Lack of copy_from_user in camera driver. 1110793 If0253a6ee695c9d3d62b4b9882898a86eeee52a9 msm: camera: sensor: Validate csid lane count  Change-Id: Ice8ac6eb95c020a1eedfb1395c80dedd42356d88 CRs-Fixed: 2006169 1116463 2006913 1104664 2009016 1099288 1110793 2005647 2003798"
+  },
+  {
+    "repo_url": "https://github.com/dongjoon-hyun/spark.git",
+    "repo_name": "spark",
+    "fixed_hash": "f6dd8e0e1673aa491b895c1f0467655fa4e9d52f",
+    "buggy_hash": "a26e3ed5e414d0a350cfe65dd511b154868b9f1d",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/Watson1978/ruby.git",
+    "repo_name": "ruby",
+    "fixed_hash": "72f8df158f68581bcb4484330abab1ae8cf7acc7",
+    "buggy_hash": "a298301baafd18be58bc51c42eb234de03d6b420",
+    "commit_msg": "string.c: fix integer overflow  * string.c"
+  },
+  {
+    "repo_url": "https://github.com/woodsts/linux-stable.git",
+    "repo_name": "linux-stable",
+    "fixed_hash": "44eed6f024913d16004ce290d986dc59f4408c06",
+    "buggy_hash": "a2d474ab560cae11b3d297471b32100a5a602d2a",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/franciscofranco/angler.git",
+    "repo_name": "angler",
+    "fixed_hash": "dee0f2fc9968f848fef7d8f12c4de6c04b6f0a33",
+    "buggy_hash": "a2dc0e767cb2499171139d392e1e18f2a928fbdd",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/sandstorm-io/capnproto.git",
+    "repo_name": "capnproto",
+    "fixed_hash": "e2cbc1b5aaf2370eefa8d81ded29ccb3c1dfaed8",
+    "buggy_hash": "a37a0cc768b58735270d82237fb57dd228c918dd",
+    "commit_msg": "WIP integer overflow detection via template metaprogramming.  See: https://capnproto.org/news/2015-03-02-security-advisory-and-integer-overflow-protection.html  This commit as-is is the result of wading through two years of merge conflicts. It does not build as-is because new code added in that time hasnt been converted over."
+  },
+  {
+    "repo_url": "https://github.com/willizambrano/android_kernel_motorola_msm8916.git",
+    "repo_name": "android_kernel_motorola_msm8916",
+    "fixed_hash": "bdbf9de2299f996349519e564952551dc34a52fc",
+    "buggy_hash": "a3950552f01fc21ab89c772200b7baa414ccbe67",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/FFmpeg/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "f4400a92f58fbe19b14eb675c241f7df310758fd",
+    "buggy_hash": "a430ba99251e34c5f4965955f506ffda21b8d34a",
+    "commit_msg": "avformat/mov: Check creation_time for overflow  Fixes integer overflow Fixes: 701640  Found-by: Found-by: Thomas Guilbert <tguilbert@google.com> Signed-off-by: Michael Niedermayer <michael@niedermayer.cc> "
+  },
+  {
+    "repo_url": "https://github.com/MSF-Jarvis/android_kernel_cyanogen_msm8916.git",
+    "repo_name": "android_kernel_cyanogen_msm8916",
+    "fixed_hash": "f11c048c95b3a82e5c8b56c0ac3235676ffe26e1",
+    "buggy_hash": "a5d1ba376f89d51fa6b06fba5ab80b32abe2c6cb",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Alberto97/android_kernel_motorola_msm8953.git",
+    "repo_name": "android_kernel_motorola_msm8953",
+    "fixed_hash": "322c70b4c804565b57c8449fb7c9a13ec38edc8d",
+    "buggy_hash": "a65c0334e2874346ab0b12cba6aba596126cd4e8",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/jenkinsci/jenkins.git",
+    "repo_name": "jenkins",
+    "fixed_hash": "08c5da35d3fafd5cf90143181e07f0d22f4f5d60",
+    "buggy_hash": "a6672a3bbb263eae99e7505c7d9957c55e294301",
+    "commit_msg": "Update remoting to 3.5  https://github.com/jenkinsci/remoting/edit/master/CHANGELOG.md  Fixed issues:  *"
+  },
+  {
+    "repo_url": "https://github.com/TeamHorizon/android_kernel_xiaomi_kenzo.git",
+    "repo_name": "android_kernel_xiaomi_kenzo",
+    "fixed_hash": "a63e1c27c923c3d822f08a4d546731def7f31426",
+    "buggy_hash": "a6de1d2f77682d6423c66c5c8fa5313786bac558",
+    "commit_msg": "sched/fair: Avoid integer overflow  sa->runnable_avg_sum is of type u32 but after shifting it by NICE_0_SHIFT bits it is promoted to u64. This of course makes no sense since the result will never be more then 32-bit long. Casting sa->runnable_avg_sum to u64 before it is shifted fixes this problem.  Reviewed-by: Ben Segall <bsegall@google.com> Signed-off-by: Michal Nazarewicz <mina86@mina86.com> Signed-off-by: Peter Zijlstra <peterz@infradead.org> Link: http://lkml.kernel.org/r/1384112521-25177-1-git-send-email-mpn@google.com Signed-off-by: Ingo Molnar <mingo@kernel.org> Signed-off-by: franciscofranco <franciscofranco.1990@gmail.com>"
+  },
+  {
+    "repo_url": "https://github.com/Llewellynvdm/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "84c4ba54f4a52f4d045c956dbc9801f27eb300b7",
+    "buggy_hash": "a71c9a1c779f2499fb2afc0553e543f18aff6edf",
+    "commit_msg": "Merge branch vmwgfx-fixes-4.11 of git://people.freedesktop.org/~thomash/linux into drm-fixes  Set of vmwgfx fixes * vmwgfx-fixes-4.11 of git://people.freedesktop.org/~thomash/linux:  drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/PixarAnimationStudios/USD.git",
+    "repo_name": "USD",
+    "fixed_hash": "58307c342f1a47e4725b0162c04e1b91acd895d8",
+    "buggy_hash": "a7d495546c73c44fdbfd8c15c5bedd291ce4ee6b",
+    "commit_msg": "Fixed testArchTiming.  Previously this test would call ArchGetTickTime"
+  },
+  {
+    "repo_url": "https://github.com/Team-OctOS-Devices/platform_kernel_oneplus_msm8996.git",
+    "repo_name": "platform_kernel_oneplus_msm8996",
+    "fixed_hash": "bd9a8fc6d7f6bd1a0b936994630006de450df657",
+    "buggy_hash": "a823a97a23cd3952f4b2555b454e0fe16113da09",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Microsoft/ChakraCore.git",
+    "repo_name": "ChakraCore",
+    "fixed_hash": "54d6d085987e2c399863940179db67b594d7f0a3",
+    "buggy_hash": "a8582a31526df04e29001f2b03554c849bc1be46",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/torvalds/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "251fe09f13bfb54c1ede66ee8bf8ddd0061c4f7c",
+    "buggy_hash": "a95600294157ca7527ee7c70249fb53e09d8c566",
+    "commit_msg": "iwlwifi: mvm: writing zero bytes to debugfs causes a crash  This is a static analysis fix. The warning is:   drivers/net/wireless/intel/iwlwifi/mvm/fw-dbg.c:912 iwl_mvm_fw_dbg_collect"
+  },
+  {
+    "repo_url": "https://github.com/wiredtiger/wiredtiger.git",
+    "repo_name": "wiredtiger",
+    "fixed_hash": "8f371403f0ccfae0188d7e4c2e6d629ade697b13",
+    "buggy_hash": "ab281e0a4f312f99494cdb381264196278c18a2f",
+    "commit_msg": "WT-3271 Prevent integer overflow in eviction tuning."
+  },
+  {
+    "repo_url": "https://github.com/bargees/buildroot.git",
+    "repo_name": "buildroot",
+    "fixed_hash": "4e10b104b8c6955ad915c2a6be9ce71c7144fc72",
+    "buggy_hash": "abab5b94cd815b13b042d1d89688eb260265081b",
+    "commit_msg": "gnutls: security bump to version 3.5.10  Fixes: GNUTLS-SA-2017-3A - Addressed integer overflow resulting to invalid memory write in OpenPGP certificate parsing. GNUTLS-SA-2017-3B - Addressed crashes in OpenPGP certificate parsing related to private key parser. No longer allow OpenPGP certificates "
+  },
+  {
+    "repo_url": "https://github.com/RobertCNelson/device-tree-rebasing.git",
+    "repo_name": "device-tree-rebasing",
+    "fixed_hash": "27f7598343a74e2f7e0c9d17291bace19a7692c4",
+    "buggy_hash": "ac21f0c5e01d515ef0f0505927015f7fc4618e10",
+    "commit_msg": "Merge tag drm-fixes-for-v4.11-rc6 of git://people.freedesktop.org/~airlied/linux  Pull drm fixes from Dave Airlie:  This is just mostly stuff that missed rc5 from vmwgfx and msm  drivers  * tag drm-fixes-for-v4.11-rc6 of git://people.freedesktop.org/~airlied/linux:  drm/msm: Make sure to detach the MMU during GPU cleanup  drm/msm/hdmi: redefinitions of macros not required  drm/msm/mdp5: Update SSPP_MAX value  drm/msm/dsi: Fix bug in dsi_mgr_phy_enable  drm/msm: Don  allow zero sized buffer objects  drm/msm: Fix wrong pointer check in a5xx_destroy  drm/msm: adreno: fix build error without debugfs  drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "b36f20c37684d263a5b5ac276455060636773e17",
+    "buggy_hash": "ade375c182fbb6d5e788eb818f0dc7b92ab38035",
+    "commit_msg": "qcrypto: protect potential integer overflow. Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Bug: 34389927"
+  },
+  {
+    "repo_url": "https://github.com/gnzlbg/range-v3.git",
+    "repo_name": "range-v3",
+    "fixed_hash": "e92917f74ca8c9bf93a97096aed3c599736ba42a",
+    "buggy_hash": "ae18d1eb89c48c02d452a0142ecca2d07525cd57",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/pexip/libav.git",
+    "repo_name": "libav",
+    "fixed_hash": "35ef033a19a6eb154ac0bbe644f9de175f3ee021",
+    "buggy_hash": "aec21cd840bc805eb8054329ee595d772099faad",
+    "commit_msg": "avformat/oggdec: Skip streams in duration correction that did not had their duration set.  Fixes: part of 670190.ogg Fixes integer overflow  Found-by: Matt Wolenetz <wolenetz@google.com> Signed-off-by: Michael Niedermayer <michael@niedermayer.cc> "
+  },
+  {
+    "repo_url": "https://github.com/xuanyuanking/spark.git",
+    "repo_name": "spark",
+    "fixed_hash": "d60ab5fd9b6af9aa5080a2d13b3589d8b79c5c5c",
+    "buggy_hash": "b08b5004563b28d10b07b70946a9f72408ed228a",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/0intro/plan9-contrib.git",
+    "repo_name": "plan9-contrib",
+    "fixed_hash": "5a836c62aad5dae75530eee286a5c28882844076",
+    "buggy_hash": "b2551f059d1c9b024a925502deaa914dd0c6e929",
+    "commit_msg": "sys/src/9/port: fix okaddr integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "d78220974f23489805646285b22ed679e8942fd8",
+    "buggy_hash": "b2c917f269a86a3c91528e8f5d46fa617814946e",
+    "commit_msg": "Make sure signed integer overflow does not cause a segfault while attempting to read a corrupt database where the header size varint on a record is larger than the maximum 32-bit signed integer."
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_motorola_msm8226.git",
+    "repo_name": "android_kernel_motorola_msm8226",
+    "fixed_hash": "b0619d0fe2e810f27f3951f71a3aed0b3293cefe",
+    "buggy_hash": "b31669746c17c8c81baaf8a2184da2550d30fe1a",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/VanirAOSP/external_ffmpeg.git",
+    "repo_name": "external_ffmpeg",
+    "fixed_hash": "21771a7c5e744884a6a6b9d8701787c3f13b1b14",
+    "buggy_hash": "b33d01d8a253028083df250b5d4a2e43e5560c64",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/MoKee/android_kernel_google_seed.git",
+    "repo_name": "android_kernel_google_seed",
+    "fixed_hash": "b36f20c37684d263a5b5ac276455060636773e17",
+    "buggy_hash": "b3bce7806a6957a214b8a79c75eb375e975ca7ce",
+    "commit_msg": "qcrypto: protect potential integer overflow. Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Bug: 34389927"
+  },
+  {
+    "repo_url": "https://github.com/sherpya/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "45198477de19ccb00729b7eec07d81494f0353e0",
+    "buggy_hash": "b409d8d4a276490cd67255fd4230ea0954bd8c50",
+    "commit_msg": "avcodec/simple_idct_template: Fix several integer overflows  Benchmarks with START_TIMER indicate that the code is faster with unsigned"
+  },
+  {
+    "repo_url": "https://github.com/MarcSchnyder/lincity-ng.git",
+    "repo_name": "lincity-ng",
+    "fixed_hash": "1a9e9cde8ea5d2cd4fc6203e7e619f23064f8960",
+    "buggy_hash": "b58c398e838547fb8e30a21a69845207bb5fd2be",
+    "commit_msg": "Fix integer overflow in tech_bonus calculation  In:\r this->tech_bonus ="
+  },
+  {
+    "repo_url": "https://github.com/KCreate/stackvm.git",
+    "repo_name": "stackvm",
+    "fixed_hash": "5d5554f79e654a82b803178bca350d30475db8f4",
+    "buggy_hash": "b5e7fa2dada2ab8ac3c81b875baac7f6ca014112",
+    "commit_msg": "Fixed integer overflow on register offset calculation"
+  },
+  {
+    "repo_url": "https://github.com/xiaomi-dev-playground/android_kernel_xiaomi_libra.git",
+    "repo_name": "android_kernel_xiaomi_libra",
+    "fixed_hash": "8eb97ed9e27f540f6492d77e16ad052b7bf5daf1",
+    "buggy_hash": "b6ae46c6e6b841bd183c068813e94b42ec12a9c2",
+    "commit_msg": "FROMLIST: ALSA: compress: fix an integer overflow check  I previously added an integer overflow check here but looking at it now its still buggy.  The bug happens in snd_compr_allocate_buffer"
+  },
+  {
+    "repo_url": "https://github.com/Ghabry/easyrpg-liblcf.git",
+    "repo_name": "easyrpg-liblcf",
+    "fixed_hash": "1bd2bfad67b8c218f7abce0b243b646cc7743dd4",
+    "buggy_hash": "b78b03d0a17e0decd8c45baea1c76c882096b0c3",
+    "commit_msg": "Detect too long compressed integers which result in integer overflows."
+  },
+  {
+    "repo_url": "https://github.com/nayuki/QR-Code-generator.git",
+    "repo_name": "QR-Code-generator",
+    "fixed_hash": "873652a82f213d5b956969d6a737eeb0cf268e70",
+    "buggy_hash": "b7a4605e4416907762acd423d2213f63ebbeb466",
+    "commit_msg": "Updated C++ ByteBuffer and QrSegment code to check and handle integer overflow strictly."
+  },
+  {
+    "repo_url": "https://github.com/franciscofranco/one_plus_3T.git",
+    "repo_name": "one_plus_3T",
+    "fixed_hash": "084c936040f962b20770833a53bac3a65d367e6d",
+    "buggy_hash": "b7b63c7bd04fcabbbd0389c2d958a4161fd9cdb9",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CRs-Fixed: 897452 Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org> Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Francisco Franco <franciscofranco.1990@gmail.com>"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_google_msm.git",
+    "repo_name": "android_kernel_google_msm",
+    "fixed_hash": "adee9b8f5a2de542f4e333907e970604e3761645",
+    "buggy_hash": "b7d544c81ae4bcabd40a09d02078ecedaece4549",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  CAF-Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>  CVE-2016-10230  Change-Id: I07a2c7d571b0eaa7abe085eeb0887c2d10ef3a40 "
+  },
+  {
+    "repo_url": "https://github.com/CopperheadOS/kernel_huawei_angler.git",
+    "repo_name": "kernel_huawei_angler",
+    "fixed_hash": "73466d63e18e04f736b90be115c8610eb11794c8",
+    "buggy_hash": "b7fb46c77af4623291f53a5453df733b8fb1fe18",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/ata4/angrylion-rdp.git",
+    "repo_name": "angrylion-rdp",
+    "fixed_hash": "94ecd84d22411f3888a1937dfab620229b3e5fc8",
+    "buggy_hash": "b87e4ead43dfcc5bd84778916cf59cc6470fb3ec",
+    "commit_msg": "rdp: fixed a bug in the edgewalker the distributive law doesnt work here because of integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/andysim/psi4.git",
+    "repo_name": "psi4",
+    "fixed_hash": "44786bd2decab8bde3c2ab99fdf315e8325a8b6f",
+    "buggy_hash": "b880560feaf8dcb7b9dbb23b0b6c7c56f5068ffa",
+    "commit_msg": "Converted a number of ints to size_t in SAPT code"
+  },
+  {
+    "repo_url": "https://github.com/hansonrobotics/ros_nmpt_saliency.git",
+    "repo_name": "ros_nmpt_saliency",
+    "fixed_hash": "857056b4245a66ede4a09106fa56a6e9be9e0b3b",
+    "buggy_hash": "ba57656d1733074c8f024223ac64ee1aa8118aa4",
+    "commit_msg": "error:cpp:82:41: warning: integer overflow in expression"
+  },
+  {
+    "repo_url": "https://github.com/thomas-yuan/libtorrent.git",
+    "repo_name": "libtorrent",
+    "fixed_hash": "cca5ab83688459ad1d19709c98da76af8e4df3ca",
+    "buggy_hash": "ba9fae8e1f74727f114f555e56ec26b3bfc27d38",
+    "commit_msg": "fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/ipazarbasi/clang.git",
+    "repo_name": "clang",
+    "fixed_hash": "e7c5d7b74a14b8f013cd95ed493cce81571e6bc5",
+    "buggy_hash": "baa8d90405a1ef158229648304c09cce0fa5d8e7",
+    "commit_msg": "Improve fix for PR28739  Dont try to map an APSInt addend to an int64_t in pointer arithmetic before bounds-checking it. This gives more consistent behavior"
+  },
+  {
+    "repo_url": "https://github.com/jsummers/imageworsener.git",
+    "repo_name": "imageworsener",
+    "fixed_hash": "86564051db45b466e5f667111ce00b5eeedc8fb6",
+    "buggy_hash": "bb321cfff3b1ab969c4cf1b692473c78672fa4ad",
+    "commit_msg": "Reduced the max memory use and image size in 64-bit builds  This is a stopgap measure that should prevent some problems with excessive resource use and possibly integer overflow. Related: issue #14"
+  },
+  {
+    "repo_url": "https://github.com/moepda/android_kernel_moto_shamu.git",
+    "repo_name": "android_kernel_moto_shamu",
+    "fixed_hash": "ed22a086b248b7115e0efac072dc5955d08d21c7",
+    "buggy_hash": "bbdf60861625cf1cb228ce682916cb829111a6c8",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "4c71366d611941830d17e90b8317218d41c4b8bf",
+    "buggy_hash": "be081a35ebd160e863579ad3ee1b0c804d92ce2a",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/levitte/openssl.git",
+    "repo_name": "openssl",
+    "fixed_hash": "216168e00d5975339b20f8a17d33b5de40fd9f66",
+    "buggy_hash": "be440a904e2dfce3453b7bd4673c251e8d6f380d",
+    "commit_msg": "Fix a possible integer overflow in long_c2i  Credit to OSS-Fuzz for finding this."
+  },
+  {
+    "repo_url": "https://github.com/ektrah/corefx.git",
+    "repo_name": "corefx",
+    "fixed_hash": "9e498f5993b2230a4e648a9e7a6943d34c6540da",
+    "buggy_hash": "c01cee026c08661ae6014bbdf04b415339279216",
+    "commit_msg": "Fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "eed403d2a76760b660b80b13f47e215ba3a4dc9a",
+    "buggy_hash": "c05811a6203edc7c4f85e1fed98f1a0a6ff24ee4",
+    "commit_msg": "Add new APIs that take 64-bit length parameters: sqlite3_malloc64"
+  },
+  {
+    "repo_url": "https://github.com/codeaurora-unofficial/kernel-msm-3.10.git",
+    "repo_name": "kernel-msm-3.10",
+    "fixed_hash": "f9e33ff0aa5653f5a6a3c326ab0ae401207c29a4",
+    "buggy_hash": "c0fa781e2e881a2d81275786bc560b14407dc515",
+    "commit_msg": "msm: kgsl: Check for integer overflow before allocating memory  In _kgsl_sharedmem_page_alloc"
+  },
+  {
+    "repo_url": "https://github.com/VertexOS/android_frameworks_native.git",
+    "repo_name": "android_frameworks_native",
+    "fixed_hash": "6e6bcd14da939e3caed3875a8d25f972b92d42a7",
+    "buggy_hash": "c12524bec11637045a2e5fa13c50641cd27cfd8b",
+    "commit_msg": "Promotion of android-framework.lnx.2.0-00040.  CRs Change ID Subject Idbcf0976ce2db682d0f13455105c45a5c7481a45 Fix SF security vulnerability: 32660278  I064b1442838032d93658f8bf63b7aa6d021c99b7 Fix integer overflow in unsafeReadTypedVector  Change-Id: I9663e28f21e1e69e0fa75db74681dc1db14044eb"
+  },
+  {
+    "repo_url": "https://github.com/chautruongthinh/android_kernel_pantech_msm8x74.git",
+    "repo_name": "android_kernel_pantech_msm8x74",
+    "fixed_hash": "3de11e379780bfa01daeae7c69aa36c9c37406a3",
+    "buggy_hash": "c1499bd544f64578a35c14c0f9fcd20589ebc4ce",
+    "commit_msg": "msm: camera: Restructure data handling to be more robust  Use dynamic array allocation instead of static array to prevent stack overflow. User-supplied number of bytes may result in integer overflow. To fix this we check that the num_byte isnt above 8K size.  CRs-Fixed: 1060554 Change-Id: I9b05b846e5cc3a62b1a0a67be529f09abc764796 Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> mh0rst: Back port fixes CVE-2016-6741"
+  },
+  {
+    "repo_url": "https://github.com/FFmpeg/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "39ee3ddff87a12e108fc4e0d36f756d0ca080472",
+    "buggy_hash": "c169ab4112c063f53440c51f007ffce0c0d394b1",
+    "commit_msg": "avformat/mov: Check creation_time for overflow  Fixes integer overflow Fixes: 701640  Found-by: Found-by: Thomas Guilbert <tguilbert@google.com> Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/msantos/trep.git",
+    "repo_name": "trep",
+    "fixed_hash": "fb7ae5d5d02e6f945d4c2b65a9b356fdd4a6e6cd",
+    "buggy_hash": "c1efe7813ee4b4b5f922be6fc13d60a6da9fecf6",
+    "commit_msg": "fastcomp: fix integer overflow  If the pattern length exceeds INT_MAX the length will be cast to an signed int:  util.c:563:13: warning: Call to malloc has an allocation size of 0 bytes  if"
+  },
+  {
+    "repo_url": "https://github.com/CS3733/AlcoholLabelProject.git",
+    "repo_name": "AlcoholLabelProject",
+    "fixed_hash": "d11d93cdff1e160c910c703e2272bd9a7979eb7c",
+    "buggy_hash": "c27eddce50e2ab0b69364db603d5a56a6d27d4e9",
+    "commit_msg": "Fix integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/CarbonROM/android_kernel_oneplus_msm8994.git",
+    "repo_name": "android_kernel_oneplus_msm8994",
+    "fixed_hash": "32d12dc60f35dd2c223c917a26c1b091484ca393",
+    "buggy_hash": "c2c9809942a6d331787bead502040ad9a4fd8d97",
+    "commit_msg": "ALSA: info: Check for integer overflow in snd_info_entry_write"
+  },
+  {
+    "repo_url": "https://github.com/hkust-smartcar/Chasing17.git",
+    "repo_name": "Chasing17",
+    "fixed_hash": "14610d5ef48ecafc6d6389909dfaf2745b4c21a9",
+    "buggy_hash": "c2d6a2be77386de6a0cd60eeb7f5477fd3840f2b",
+    "commit_msg": "Fixed a potential integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_samsung_apq8084.git",
+    "repo_name": "android_kernel_samsung_apq8084",
+    "fixed_hash": "3050d43aea8662adfa98fb34f2e4ed1ae6d2a4de",
+    "buggy_hash": "c50c011c3b29437a15f4d9fa8dcd259c291b3b49",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> Signed-off-by: Corinna Vinschen <xda@vinschen.de>"
+  },
+  {
+    "repo_url": "https://github.com/SlimRoms/kernel_motorola_msm8916.git",
+    "repo_name": "kernel_motorola_msm8916",
+    "fixed_hash": "fd2b411213404cfc069202a1333b94eec3216768",
+    "buggy_hash": "c56466df0b321c68a01d26b8ea9b57187c78b62f",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/cycocrew/jcl.git",
+    "repo_name": "jcl",
+    "fixed_hash": "3e3a38518035ca7ac226d9c52bb25636915cc35e",
+    "buggy_hash": "c669ce3b0112be43e2adc638dafe22fd7ede4022",
+    "commit_msg": "Fixed integer overflow in DoStretch"
+  },
+  {
+    "repo_url": "https://github.com/Alucard24/Alucard-Kernel-LG-G5.git",
+    "repo_name": "Alucard-Kernel-LG-G5",
+    "fixed_hash": "8d6326071048887dd02431b3bcfdea9fa49edca0",
+    "buggy_hash": "c708b7fa64d8f9fa61de8f4328dd1cfcdcaa840b",
+    "commit_msg": "msm-camera: Addressing possible overflow conditions  Changes to address possible integer overflow and incorrect array indexing conditions.  CRs-Fixed: 897452 Change-Id: Ib134320cd6f7b34d7a10572ec347ec12127049a9 Signed-off-by: Trilokesh Rangam <tranga@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org> Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Francisco Franco <franciscofranco.1990@gmail.com>"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_motorola_msm8916.git",
+    "repo_name": "android_kernel_motorola_msm8916",
+    "fixed_hash": "3ae1eb3c7ebb0dc9bb2a221878ec62b05a0e4e63",
+    "buggy_hash": "c70c3bc2a5ff319aa9a54a292ceefd19010eea36",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/dagf2101/android_kernel_xiaomi_msm8953.git",
+    "repo_name": "android_kernel_xiaomi_msm8953",
+    "fixed_hash": "d7e3fea3b4b8306061fd00f9ad2f446007e60af8",
+    "buggy_hash": "c74adf9d80d28508ec6893d33905a0742d9c523c",
+    "commit_msg": "msm: mdss: Fix possible integer overflow  Avoid possible integer overflow while validating mdp3 lut config parameters.  Change-Id: Ie3f59748e613fbbf755a98dcc688491a8c4e2cca CRs-Fixed: 1104664 Signed-off-by: Sravan Kumar D.V.N <sravank1@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/clearlinux/swupd-overdue.git",
+    "repo_name": "swupd-overdue",
+    "fixed_hash": "6133ac4ccfb452fc72fb2271be8e25537067e349",
+    "buggy_hash": "c7985423c0abf5a9d9bb975da2bd1a40137ffc1e",
+    "commit_msg": "FIX integer overflow using atoi it was change for strtol  Signed-off-by: Josue David Hernandez Gutierrez <josue.d.hernandez.gutierrez@intel.com>"
+  },
+  {
+    "repo_url": "https://github.com/Alucard24/Alucard-Kernel-LG-G5.git",
+    "repo_name": "Alucard-Kernel-LG-G5",
+    "fixed_hash": "2738aec829dc82de8ef93adaf9035a14e3240e23",
+    "buggy_hash": "c7fc958bd08e65675c6f774d7d0118d69dcb2e8a",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com>"
+  },
+  {
+    "repo_url": "https://github.com/travarilo/android_kernel_xiaomi_cancro.git",
+    "repo_name": "android_kernel_xiaomi_cancro",
+    "fixed_hash": "d59acf7daa31c6eff58d1af873b22c55cf5bf76a",
+    "buggy_hash": "c8971047fa6b5afb98ef1264a9639ecf7c5e458a",
+    "commit_msg": "ext4: fix potential integer overflow  commit 46901760b46064964b41015d00c140c83aa05bcf upstream.  Since sizeof"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "bc3184b9f6096872fbc508dfd0cb99f8922fa18a",
+    "buggy_hash": "c8ecbc3ca4ef9f8db825f11bfe3627cc3c33e0d4",
+    "commit_msg": "Promotion of kernel.lnx.3.18.c8-170404.1.  CRs Change ID  2017051 I325695f38753a4d4bc732987cf514e8616273aca msm: thermal-dev: Protect IOCTL from race condition 1110860 I3fab3edd4515d7a4c67f29d68b2039f234b03612 msm: mdss: Handling possible integer overflow  Change-Id: I0acc745023488e7c4858652c44a9efd0a1a5d5e5 CRs-Fixed: 1110860 2017051"
+  },
+  {
+    "repo_url": "https://github.com/openSUSE/kernel-source.git",
+    "repo_name": "kernel-source",
+    "fixed_hash": "65869d2751a7b5d705fd551331cec0158ec7d55f",
+    "buggy_hash": "c97748e9712685d7891d0c0336385cffca2baacf",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/qubole/rubix.git",
+    "repo_name": "rubix",
+    "fixed_hash": "e840a4b2e1d22578bc680e91583cc2ddb32dcd29",
+    "buggy_hash": "c981d6f44a37574fd0f983991edce77cb83b419d",
+    "commit_msg": "Fix integer overflow which causes data corruption"
+  },
+  {
+    "repo_url": "https://github.com/aquaris-dev/android_kernel_bq_msm8937.git",
+    "repo_name": "android_kernel_bq_msm8937",
+    "fixed_hash": "da5a85d3110cf905e741550350f578015f2a5e88",
+    "buggy_hash": "c99c25f70107b9dc4e3c4d7773e87fa89b1c678b",
+    "commit_msg": "netfilter: x_tables: check for size overflow  Ben Hawkes says:  integer overflow in xt_alloc_table_info which on 32-bit systems can  lead to small structure allocation and a copy_from_user based heap  corruption.  Change-Id: I5dd88359586b2f6c48daad9cdb6ea55a5b09854f Reported-by: Ben Hawkes <hawkes@google.com> Signed-off-by: Florian Westphal <fw@strlen.de> Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org>"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "6f403d24f88e5771c4600fb38c7e663418994edf",
+    "buggy_hash": "cb1f72a0ea692623566e6ee0dd80ac0a616e582f",
+    "commit_msg": "Changes to sqlite3_analyzer to try to avoid integer overflow problems  when linking against older versions of TCL."
+  },
+  {
+    "repo_url": "https://github.com/alesaiko/breakfast-flo.git",
+    "repo_name": "breakfast-flo",
+    "fixed_hash": "b3dcea5b428a57a19574305f8ec7661bd4259c56",
+    "buggy_hash": "cb7ac74c54da8e20ba77536ef28bc44f88398347",
+    "commit_msg": "flo: Push missing Google patches till March 2017  ashmem: Validate ashmem memory with fops pointer  Validate the ashmem memory entry against f_op pointer rather then comparing its name with path of the dentry.  This is to avoid any invalid access to ashmem area in cases where some one deliberately set the dentry name to /ashmem.  Change-Id: I74e50cd244f68cb13009cf2355e528485f4de34b Signed-off-by: Sunil Khatri <sunilkh@codeaurora.org>  mm: remove gup_flags FOLL_WRITE games from __get_user_pages"
+  },
+  {
+    "repo_url": "https://github.com/shminer/kernel-msm-3.18.git",
+    "repo_name": "kernel-msm-3.18",
+    "fixed_hash": "dac96509b7b5b36d20445c251ab4b3ef264a2ca6",
+    "buggy_hash": "cba44453b7316782acd95cc9f4ea68a377f3da9d",
+    "commit_msg": "Promotion of kernel.lnx.3.18.c7-161222.  CRs Change ID 1089433 Iaaa6f5b3c1c2ac5b5b38b3ac407d6ae394bba780 msm: camera: eeprom: Validate the power setting size 1095920 I67068bac21274d715f61f9e5b83fae54e2c8e22d f_gsi: Dont reconfigure USB GSI eps multiple time with 1091408 Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 qcrypto: protect potential integer overflow. 1085406 I9f971cbd54cabbf0119ed00bd811fcf2d7782e05 USB: dwc3: Fix usb host mode device rebooting in loop is 1092794 If37124c100ca6f4aa962559fba3bd5dbbec8e052 perf: protect group_leader from races that cause ctx dou 1092417 Ie46bca513cd8bfdc91ca8b9a5fec6066b7969f1c ASoC: msm8x16-wcd: Config HPH PA gain for high impedance 1088824 Ifaa4b5387d4285ddce16d8e745aa0500c64c568b msm: camera: fix bound check of offset to avoid overread 1092794 Iae2467f342a62fffe01796ea812cd42e8461c348 perf: Fix event->ctx locking  Change-Id: Id6a08b5f783af3684108e3abeeaf3d77350a8768 CRs-Fixed: 1091408 1092417 1095920 1092794 1089433 1085406 1088824"
+  },
+  {
+    "repo_url": "https://github.com/DeadneM/android_kernel_moto_shamu.git",
+    "repo_name": "android_kernel_moto_shamu",
+    "fixed_hash": "c9c8402dfe1e6e19a91dda630aee11065aea993d",
+    "buggy_hash": "cc2365a096f3b3ca628d3158fb39d34a85e609e8",
+    "commit_msg": "msm: crypto: Fix integer overflow check in qcedev driver  Integer overflow check always fails when ULONG_MAX is used as ULONG_MAX is 2^64-1 while req->data"
+  },
+  {
+    "repo_url": "https://github.com/minijackson/INF-4301A.git",
+    "repo_name": "INF-4301A",
+    "fixed_hash": "1386f6ea26ef26be3ce20ad1949a46fe3c177ff8",
+    "buggy_hash": "cc33ae9816b3ab6f6b57c30cc22e47a1f4e9df08",
+    "commit_msg": "Catch integer overflow error in parsing"
+  },
+  {
+    "repo_url": "https://github.com/zeux/pugixml.git",
+    "repo_name": "pugixml",
+    "fixed_hash": "8c1605db1989a9cee70c2ddbbf826bf7d1fa33ce",
+    "buggy_hash": "cdd5d92f264727ecf007cc7dd25cc662bfdc606a",
+    "commit_msg": "Work around -fsanitize=integer issues  Integer sanitizer is flagging unsigned integer overflow in several functions in pugixml; unsigned integer overflow is well defined but it may not necessarily be intended.  Apart from hash functions both string_to_integer and integer_to_string use unsigned overflow - string_to_integer uses it to perform two-complement negation so that the bulk of the operation can run using unsigned integers. This makes it possible to simplify overflow checking. Similarly integer_to_string negates the number before generating a decimal representation but negating is impossible without unsigned overflow or special-casing certain integer limits.  For now just silence the integer overflow using a special attribute; also move unsigned overflow into string_to_integer from get_value_* so that we have fewer functions marked with the attribute.  Fixes #133."
+  },
+  {
+    "repo_url": "https://github.com/torvalds/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "457ae7268b29c33dee1c0feb143a15f6029d177b",
+    "buggy_hash": "ce0dcee626c482183b42d45b6ea43198c7223fc7",
+    "commit_msg": "Btrfs: fix an integer overflow check  This isn  super serious because you need CAP_ADMIN to run this code.  I added this integer overflow check last year but apparently I am rubbish at writing integer overflow checks... There are two issues. First access_ok"
+  },
+  {
+    "repo_url": "https://github.com/Jackeagle/kernel_msm-3.10.git",
+    "repo_name": "kernel_msm-3.10",
+    "fixed_hash": "a22733ba506ea768f8bd56283a0db4b9da80e760",
+    "buggy_hash": "ce46a77ab891ff50263702d95615ba392fa16701",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Yang Guang <guyang@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/HelpMeRuth/Base-Project.git",
+    "repo_name": "Base-Project",
+    "fixed_hash": "729749734750f8845bb8372e992d3f0dd88f191b",
+    "buggy_hash": "cea511ff5925718f12010440e44033a6b4376bd3",
+    "commit_msg": "inetdevice: fixed signed integer overflow  "
+  },
+  {
+    "repo_url": "https://github.com/shminer/kernel-msm-3.18.git",
+    "repo_name": "kernel-msm-3.18",
+    "fixed_hash": "3cb7a7acb5f76016f3b718b71c564916d8cf74e9",
+    "buggy_hash": "cf7b4357418822856e7d0ccdc91736c1ddeb31ca",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/mrmekon/connectr.git",
+    "repo_name": "connectr",
+    "fixed_hash": "d4604138c025a398fb57c623f2fff248614e9d39",
+    "buggy_hash": "cfc72fcc09f7e68edcca3b10ce11bc26f7fff2fb",
+    "commit_msg": "Fix integer overflow in refresh time calculation"
+  },
+  {
+    "repo_url": "https://github.com/slari-pivotal/gpdb.git",
+    "repo_name": "gpdb",
+    "fixed_hash": "df5460eab159b7cdc3528337369433bac72e1b50",
+    "buggy_hash": "cfd00e6fbace4502b920944a563d9b50901d0cb6",
+    "commit_msg": "Fixing Coverity errors for FTS component.  This commit fixes the following Coverity errors.  ftsfilerep.c: 129923"
+  },
+  {
+    "repo_url": "https://github.com/elginsk8r/android_kernel_htc_msm8960.git",
+    "repo_name": "android_kernel_htc_msm8960",
+    "fixed_hash": "4741ae975f0d12ea29a8c2b4362a23155f6d3e81",
+    "buggy_hash": "d1e3bf0ab4e1b5ead56add10691bdd8f9c0d02d6",
+    "commit_msg": "ASoC: msm: audio-effects: misc fixes in h/w accelerated effect  Adding memory copy size check and integer overflow check in h/w accelerated effect driver.  Change-Id: I17d4cc0a38770f0c5067fa8047cd63e7bf085e48 CRs-Fixed: 1006609 Signed-off-by: Weiyin Jiang <wjiang@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "443fd8425d3c66aab41d7d450b5c607c37174737",
+    "buggy_hash": "d2034b7a1ffc25730ac955f04adad578cc3d33bb",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  CVE-2017-0576  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/attilajeges/incubator-impala.git",
+    "repo_name": "incubator-impala",
+    "fixed_hash": "013456d3b462ec2af4e026538848fcad79e98531",
+    "buggy_hash": "d2c540f1e3d63eea39311a03f1ee8741042312eb",
+    "commit_msg": "IMPALA-4955: Fix integer overflow in hdfs table size accounting  We incorrectly use integer type instead of a long for a variable that tracks the partition data size and that is overflowing.  Testing: Couldnt reproduce it locally but the perf build that was hitting this over TPCDS scale 1000 dataset is green with this fix.  Change-Id: I8ee568a72ac038464cfb3e4c225f130770dd8d0f Reviewed-on: http://gerrit.cloudera.org:8080/6133 Reviewed-by: Alex Behm <alex.behm@cloudera.com> Tested-by: Impala Public Jenkins"
+  },
+  {
+    "repo_url": "https://github.com/tianocore/edk2.git",
+    "repo_name": "edk2",
+    "fixed_hash": "6893b16fb9f8afef71ae4e9e3dead6bb685f6994",
+    "buggy_hash": "d3d562b90419596a1c7dec75d1b49a89b968ead1",
+    "commit_msg": "NetworkPkg/HttpDxe: Fix HTTP download OS image over 4G size failure  UINT32 integer overflow will happen once the download OS image over 4G size. This patch is to fix this issue.  Cc: Ye Ting <ting.ye@intel.com> Cc: Fu Siyuan <siyuan.fu@intel.com> Cc: Zhang Lubo <lubo.zhang@intel.com> Contributed-under: TianoCore Contribution Agreement 1.0 Signed-off-by: Wu Jiaxin <jiaxin.wu@intel.com> Reviewed-by: Fu Siyuan <siyuan.fu@intel.com> Reviewed-by: Ye Ting <ting.ye@intel.com> Reviewed-by: Sriram Subramanian <sriram-s@hpe.com>"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "be081a35ebd160e863579ad3ee1b0c804d92ce2a",
+    "buggy_hash": "d3d680c3b8eb289cf763c5c8af95a0bf9dbda8c8",
+    "commit_msg": "FROMLIST: qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Bug: 34389927 Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/XPerience-AOSP-Lollipop/android_kernel_motorola_msm8953.git",
+    "repo_name": "android_kernel_motorola_msm8953",
+    "fixed_hash": "19449d3c11c67a7513d17d525f9410ee78efd469",
+    "buggy_hash": "d4e20504ccc40206a18c3785a90de98a96fc6783",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/android/kernel_msm.git",
+    "repo_name": "kernel_msm",
+    "fixed_hash": "ddc398c5d658b5b33c23dbca617e0d1d021a5c6d",
+    "buggy_hash": "d583f12e8a486763c3d12f2a9a7431d050f942f3",
+    "commit_msg": "qcacld-2.0: Avoid integer overflow in wma_enable_arp_ns_offload  In the function wma_enable_arp_ns_offload"
+  },
+  {
+    "repo_url": "https://github.com/tuliom/glibc.git",
+    "repo_name": "glibc",
+    "fixed_hash": "6ef92b982aef69f05a3faa481c34699bfa55f1dd",
+    "buggy_hash": "d5ef25a8d894fa5833854588afaacdf8771972a8",
+    "commit_msg": "Fix BZ #17269 -- _IO_wstr_overflow integer overflow  "
+  },
+  {
+    "repo_url": "https://github.com/ceph/gf-complete.git",
+    "repo_name": "gf-complete",
+    "fixed_hash": "128bd51f1a06385f66d136d2d1eec7a17423b690",
+    "buggy_hash": "d61b4d377a6a3f202de8a3541abf6383313adab7",
+    "commit_msg": "Resolve cppcheck Signed integer overflow errors  The type of expression 1<<31 is signed int and this causes cppcheck to issue the following warning.  src/gf_w32.c:681"
+  },
+  {
+    "repo_url": "https://github.com/petdance/perl5.git",
+    "repo_name": "perl5",
+    "fixed_hash": "67dd6f35b05c5d28609af9237e6f509a8bb91383",
+    "buggy_hash": "d69c43040e4967294b1195ecfdc4acf0f74b5958",
+    "commit_msg": "fix integer overflows in Perl_do_vecget"
+  },
+  {
+    "repo_url": "https://github.com/clearlinux-pkgs/gdk-pixbuf.git",
+    "repo_name": "gdk-pixbuf",
+    "fixed_hash": "a8bdd106fabd5315c5a1bd763ffea41a1d2853d8",
+    "buggy_hash": "d76ecaa21072d53543bdd17b1b406cd44e79779b",
+    "commit_msg": "gdk-pixbuf: Autospec creation for update from version 2.32.2 to version 2.32.3  2.32.3 ======  * Fix two crashes in the bmp loader"
+  },
+  {
+    "repo_url": "https://github.com/kayousterhout/spark-1.git",
+    "repo_name": "spark-1",
+    "fixed_hash": "0c1a8faba0a4b43a726df792e556d4005c49ff16",
+    "buggy_hash": "d7d774638e9ff9d776fa25a22f9b721f63833e5e",
+    "commit_msg": "Avoid integer overflow with flush interval"
+  },
+  {
+    "repo_url": "https://github.com/BoxLib-Codes/Castro.git",
+    "repo_name": "Castro",
+    "fixed_hash": "ad589fd74c19760c6b723bab5fe31a80e4a8d05d",
+    "buggy_hash": "d814b59fa7ae0534929ac2f7e2861f57087113a4",
+    "commit_msg": "Add some protects against nonsense retry attempts  First ensure that were not about to do an integer overflow by requesting more timesteps than integer counter can accept.  Second check that we are not requesting more timesteps than a user-defined maximum number. This is checked against the new parameter castro.retry_max_subcycles. The parameter defaults to 1000.  Third check that the subcycled timestep is not smaller than the user-defined minimum timestep castro.dt_cutoff."
+  },
+  {
+    "repo_url": "https://github.com/codeaurora-unofficial/platform-hardware-qcom-display.git",
+    "repo_name": "platform-hardware-qcom-display",
+    "fixed_hash": "7b72c752960ba5505bff239510089622b235f99c",
+    "buggy_hash": "d961520c7e57903bc5cb91e350bc93b11907bc36",
+    "commit_msg": "libmemtrack: Fix integer overflow in kgsl function  In the kgsl function which gets memory info for a pid there could be possibility of integer overflow in operations with size accounted_sizeand unaccounted_size due to which result might be smaller than these values. External input size is verified and overflow check has been added.  CRs-Fixed: 1103020 Change-Id: Ic450e990598777591739635facc08fb7a2e477f9"
+  },
+  {
+    "repo_url": "https://github.com/Maegorn/android_kernel_zte_nx503a.git",
+    "repo_name": "android_kernel_zte_nx503a",
+    "fixed_hash": "420478d35446d2f1435aeadcc39d57fbcdc75090",
+    "buggy_hash": "db22d86061c927025f30c422267588de9c7b3f84",
+    "commit_msg": "netfilter: x_tables: check for size overflow  Ben Hawkes says:  integer overflow in xt_alloc_table_info which on 32-bit systems can  lead to small structure allocation and a copy_from_user based heap  corruption.  Change-Id: Ie77f328de918facc9fe0ebb029b7c2d107dcd388 Reported-by: Ben Hawkes <hawkes@google.com> Signed-off-by: Florian Westphal <fw@strlen.de> Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org>"
+  },
+  {
+    "repo_url": "https://github.com/huntlabs/FrameworkBenchmarks.git",
+    "repo_name": "FrameworkBenchmarks",
+    "fixed_hash": "a2b18227d69ce1ac392ae07512a559dff4455b61",
+    "buggy_hash": "dcd8b25cbb6dce45c8daf24f417a0cfb9e88f4ef",
+    "commit_msg": "H2O: Improve load balancing and other enhancements"
+  },
+  {
+    "repo_url": "https://github.com/CypherOS/kernel_motorola_msm8226.git",
+    "repo_name": "kernel_motorola_msm8226",
+    "fixed_hash": "9a13182747314dae009fe42ba05077573f4e1e79",
+    "buggy_hash": "de60e1ea92fab427efd4d2a924729826d01cb385",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/consen/demo.git",
+    "repo_name": "demo",
+    "fixed_hash": "fc54450e8dcc6e3088d419ebd7427db2ec5f646c",
+    "buggy_hash": "de896077eb4486abd64fed253e879b5f2c5dbc26",
+    "commit_msg": ""
+  },
+  {
+    "repo_url": "https://github.com/yabskbd/MHR17_ICE_Controller.git",
+    "repo_name": "MHR17_ICE_Controller",
+    "fixed_hash": "86b6e1734d60d06a66d49aace1edf962ed7b3f7e",
+    "buggy_hash": "ded25720a8cd8cd95a69f1df288fccb5efd49cbe",
+    "commit_msg": "fixed integer overflow issue"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "93ac2cc724d3f75647d655077f9bc2097d0eb908",
+    "buggy_hash": "df5fc06e748620b39e3fd86371226d324903aece",
+    "commit_msg": "Avoid an integer overflow in fts3 causing gcc 4.7.1 with -O2 to behave counter-intuitively"
+  },
+  {
+    "repo_url": "https://github.com/nox/jpeg-decoder.git",
+    "repo_name": "jpeg-decoder",
+    "fixed_hash": "b94d4ae7ab8108b52025e3e99cf47177e43f107e",
+    "buggy_hash": "df62853422b6ee7b4a22eabf8e3aa032db8954f1",
+    "commit_msg": "Fix an integer overflow when decoding DC coefficients"
+  },
+  {
+    "repo_url": "https://github.com/GregorySchwartz/rank-product.git",
+    "repo_name": "rank-product",
+    "fixed_hash": "ea928fde42e806dc3ddf4bd95a2478a7a7daef05",
+    "buggy_hash": "df925fb6fbc48410e96d04178351457549d3650c",
+    "commit_msg": "Changed to double to account for integer overflow."
+  },
+  {
+    "repo_url": "https://github.com/TeamHorizon/android_kernel_huawei_kiwi.git",
+    "repo_name": "android_kernel_huawei_kiwi",
+    "fixed_hash": "c65d87fcad4d6bb1250cd452394cb8d5e37fa650",
+    "buggy_hash": "e0e9d75b7e9639b7b1888f8ece462e46128cda9c",
+    "commit_msg": "msm: cpp: Fix for integer overflow in cpp  Due to integer overflow the bound check in config frame function may pass and this may allow user to access invalid buffer. This fix takes care of proper bound and dont allow integer overflow.  Bug: 32919951 CRs-Fixed: 1097709 Change-Id: I504ad591633afaba82268b5ee27a321691d75c80 Signed-off-by: Kumar Behera <mohanb@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/TrinityCore/TrinityCore.git",
+    "repo_name": "TrinityCore",
+    "fixed_hash": "4c593f12caa162c1bfb831bdbed934bb39155ddb",
+    "buggy_hash": "e32a4f26aaa51fba2647aeb8ef751dd398bc09d8",
+    "commit_msg": "Core/Instance: stop updating the instance resettimes based on creature respawns  - Rather update normal instance reset time to 2 hours after last creature kill - This fixes yet another integer overflow due to the possibility of having time_t max showing up - Also change respawntime and resettime fields to bigint on respawn/instance related tables - Start using prepared statements on the InstanceSaveMgr"
+  },
+  {
+    "repo_url": "https://github.com/syphyr/android_kernel_samsung_msm8976.git",
+    "repo_name": "android_kernel_samsung_msm8976",
+    "fixed_hash": "7f4080c085604ccf29f9aa5a49ba86b22620a540",
+    "buggy_hash": "e35ab3a4245117d69bae1669b9363a42bbb2e86b",
+    "commit_msg": "netfilter: x_tables: check for size overflow  Ben Hawkes says:  integer overflow in xt_alloc_table_info which on 32-bit systems can  lead to small structure allocation and a copy_from_user based heap  corruption.  Reported-by: Ben Hawkes <hawkes@google.com> Signed-off-by: Florian Westphal <fw@strlen.de> Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org>"
+  },
+  {
+    "repo_url": "https://github.com/Stupeflix/FFmpeg.git",
+    "repo_name": "FFmpeg",
+    "fixed_hash": "04c99c8042c8bfae817c722d90aa0f1a40db861e",
+    "buggy_hash": "e46ab997506e8aa84344c29553ebacca7993904c",
+    "commit_msg": "avcodec/h264idct_template: Fix several runtime error: signed integer overflow  Fixes: 689/clusterfuzz-testcase-6029352737177600  Found-by: continuous fuzzing process https://github.com/google/oss-fuzz/tree/master/targets/ffmpeg Signed-off-by: Michael Niedermayer <michael@niedermayer.cc>"
+  },
+  {
+    "repo_url": "https://github.com/Dmole/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "4ddd24d54fedff301e8f020d7b9f70116383af31",
+    "buggy_hash": "e48dd0e00e9e4cb94cc5b918cdd591e1b55965b2",
+    "commit_msg": "drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl"
+  },
+  {
+    "repo_url": "https://github.com/nvanbenschoten/cockroach.git",
+    "repo_name": "cockroach",
+    "fixed_hash": "82ee14bdf7c6c944facd483bd9956ac5c202bc9a",
+    "buggy_hash": "e9a94ab76483813130d2c2c617cc921ecc6a434f",
+    "commit_msg": "sql: detect integer overflow in + - *  Fixes #14780 Fixes #10408"
+  },
+  {
+    "repo_url": "https://github.com/CypherOS/kernel_google_msm.git",
+    "repo_name": "kernel_google_msm",
+    "fixed_hash": "b5535dc7a5c69fd1f6495ea3e5e51212928a74a7",
+    "buggy_hash": "ea3ce1028cb5724a635db78c1f02a69977e6688c",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  CAF-Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>  CVE-2016-10230  Change-Id: I07a2c7d571b0eaa7abe085eeb0887c2d10ef3a40 "
+  },
+  {
+    "repo_url": "https://github.com/ceph/gf-complete.git",
+    "repo_name": "gf-complete",
+    "fixed_hash": "2700e1b9ae066215b7ccb780078b32da88c9716c",
+    "buggy_hash": "ea75cdffe1b8902bf02b4c44efb405bfb92b3e4f",
+    "commit_msg": "Resolve cppcheck Signed integer overflow errors  The type of expression 1<<31 is signed int and this causes cppcheck to issue the following warning.  src/gf_w32.c:681"
+  },
+  {
+    "repo_url": "https://github.com/hardenedapple/neovim.git",
+    "repo_name": "neovim",
+    "fixed_hash": "dc3e6974fe9a87ef81734a64bdf75be18a76c784",
+    "buggy_hash": "eacd788cf56fee586901f4252ae7492aaf007b3f",
+    "commit_msg": "vgetorpeek swap `break` for `continue`  The difference between using `break` and `continue` is that `break` puts you into the outer while"
+  },
+  {
+    "repo_url": "https://github.com/khadas/android_frameworks_native.git",
+    "repo_name": "android_frameworks_native",
+    "fixed_hash": "91683ea8aae107d9536efb3fdc939b143a0ee762",
+    "buggy_hash": "ec03dd3735049401ea0ef27e0c16545a80e3caf2",
+    "commit_msg": "PD#137860: Security patch from bulletin-2017-01-preview.  Fix integer overflow in unsafeReadTypedVector  Passing a size to std::vector that is too big causes it to silently under-allocate when exceptions are disabled leaving us open to an OOB write. We check the bounds and the resulting size now to verify allocation succeeds.  Test: Verified reproducer attached to bug no longer crashes Camera  service. Bug: 31677614  Change-Id: I064b1442838032d93658f8bf63b7aa6d021c99b7 "
+  },
+  {
+    "repo_url": "https://github.com/XOSP-Project/android_hardware_qcom_display.git",
+    "repo_name": "android_hardware_qcom_display",
+    "fixed_hash": "7e152c602e8ee0e02c51475dea974aeec990dbef",
+    "buggy_hash": "ed8882c1f10f7fd082bfcf423b5bbcf947f8bdf6",
+    "commit_msg": "libmemtrack: Fix integer overflow in kgsl function  In the kgsl function which gets memory info for a pid there could be possibility of integer overflow in operations with size mapsize accounted_size and unaccounted_size due to which result might be smaller than these values. External inputs size and mapsize are verified and overflow check has been added.  CRs-Fixed: 1103020 Change-Id: Ic450e990598777591739635facc08fb7a2e477f9 Signed-off-by: Archana Sriram <apsrir@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/Aokromes/TrinityCore.git",
+    "repo_name": "TrinityCore",
+    "fixed_hash": "0d6c2978ae7a595b5be2ab0da6a919c3e2c1dc6d",
+    "buggy_hash": "ed95f9249b867b07cdf3705c8f2222a5eaf74f02",
+    "commit_msg": "Core/Creature: fix integer overflow in Creature::Update leading to endless thrashing of characters database  Closes #19182"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "12f71ca30e0683c8b4d0c3eec06482aa4fece72f",
+    "buggy_hash": "edd9f4e71313d3c7be4b11626e75b7951edfe1dd",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/CypherOS/kernel_motorola_msm8226.git",
+    "repo_name": "kernel_motorola_msm8226",
+    "fixed_hash": "b3c57dc5e7939f6ad1ded9ebc58a00a9f5391c96",
+    "buggy_hash": "eee8751859e47f79866e7ad5fe0e6f01d8e6fef9",
+    "commit_msg": "qcrypto: protect potential integer overflow.  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: Iaf8259e3c4a157e1790f1447b1b62a646988b7c4 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/raspbian-packages/linux.git",
+    "repo_name": "linux",
+    "fixed_hash": "18c0dadb5ccbee236cc4bad3c9e00b4a67889f83",
+    "buggy_hash": "f0c4286196979f18aefaa8b535e4c23c4350aa79",
+    "commit_msg": "linux"
+  },
+  {
+    "repo_url": "https://github.com/leizleiz/sfntly.git",
+    "repo_name": "sfntly",
+    "fixed_hash": "cccd3aa9adb8e2e9bae607ff636659b60db6a6f9",
+    "buggy_hash": "f1384b25f4695f9dad95c01a7ddcf789a9442cea",
+    "commit_msg": "Check for integer overflow in SetupGlyfBuilders.  Fixes https://crbug.com/659936"
+  },
+  {
+    "repo_url": "https://github.com/XPerience-AOSP-Lollipop/android_frameworks_native.git",
+    "repo_name": "android_frameworks_native",
+    "fixed_hash": "9a8df9a20a808d336cd3334014d08cb3daefccfe",
+    "buggy_hash": "f14208e0390d8ee20ee4a5d7605d614e8b1abaf1",
+    "commit_msg": "Fix integer overflow in unsafeReadTypedVector  Passing a size to std::vector that is too big causes it to silently under-allocate when exceptions are disabled leaving us open to an OOB write. We check the bounds and the resulting size now to verify allocation succeeds.  Test: Verified reproducer attached to bug no longer crashes Camera  service. Bug: 31677614  Change-Id: I064b1442838032d93658f8bf63b7aa6d021c99b7 "
+  },
+  {
+    "repo_url": "https://github.com/scotthartbti/frameworks_native.git",
+    "repo_name": "frameworks_native",
+    "fixed_hash": "75ca8ef23bed19fec2af0fdfb63e0d5725c6df71",
+    "buggy_hash": "f2026efb5a50abe0cc1f11546de7426ff9cafd52",
+    "commit_msg": "Benign unsigned integer overflow in Parcel  The realloc case in continueWrite did not update the gParcelGlobalAllocCount value when an allocation occurred.  In addition there are conditions that could cause the gParcelGlobalAllocCount value to be decremented below 0 resulting in a benign unsigned integer overflow that can cause corrupted values to be returned through system profiling mechanisms.  BUG: 23972600 Change-Id: Ibe07db91a811a04b486760eb78d81c926ba8503d"
+  },
+  {
+    "repo_url": "https://github.com/lt03lte-aosp-nougat/platform_frameworks_av.git",
+    "repo_name": "platform_frameworks_av",
+    "fixed_hash": "5ff7e0fbcf0e99317f1da0b4ac06e981092b1676",
+    "buggy_hash": "f21cc133738a35363585a6663c0e30fd55881d10",
+    "commit_msg": "Fix integer overflow in amrwbenc  Bug: 25843966 Change-Id: Ib9b37712819d776496b7a06b9e85c5d1e43f9d25"
+  },
+  {
+    "repo_url": "https://github.com/kj77/android_kernel_sony_msm8226.git",
+    "repo_name": "android_kernel_sony_msm8226",
+    "fixed_hash": "19d07e884b7fd22f92eb8939556dcbf55df1982c",
+    "buggy_hash": "f34da8d9b986fc46cf38316624e9e219d8868714",
+    "commit_msg": "bql: Fix POSDIFF"
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "a7967fc47df897bb1c67c7ce4ff1cf1dca3d7042",
+    "buggy_hash": "f37e428e264809accde067a25ebeb57db5c6c7c4",
+    "commit_msg": "qcacld-2.0: Avoid integer overflow in wma_enable_arp_ns_offload  In the function wma_enable_arp_ns_offload"
+  },
+  {
+    "repo_url": "https://github.com/c10ud/CHDK.git",
+    "repo_name": "CHDK",
+    "fixed_hash": "19d4e5075238eb3c42f86a177509579b14334068",
+    "buggy_hash": "f3bdaeed6f2266eab44971f502a872f110a675c6",
+    "commit_msg": "benchmark: store disk results as kilobytes in order to overcome integer overflow issues"
+  },
+  {
+    "repo_url": "https://github.com/tasn/efl.git",
+    "repo_name": "efl",
+    "fixed_hash": "330368c10c5b154781f9cf3897b7c688d131b32a",
+    "buggy_hash": "f3f032e63f7843b8bed3bbcccb58714b38b60e49",
+    "commit_msg": "eina log - try and fix coverity complaint about integer overflow again  it seems coverity didnt like our checks like if end - start > 0xffff then dont do anything. this should effectively stop any issues but seemingly not so try another way to keep coverity happy.  CID 1361219"
+  },
+  {
+    "repo_url": "https://github.com/lemmy/tlaplus.git",
+    "repo_name": "tlaplus",
+    "fixed_hash": "df547c30e1469a8dc79781391829035a7a54cb0e",
+    "buggy_hash": "f4520eb020c831ccdd47d641f0d2a338668639dc",
+    "commit_msg": "Prevent integer overflow when disk files become large"
+  },
+  {
+    "repo_url": "https://github.com/LineageOS/android_kernel_cyanogen_msm8916.git",
+    "repo_name": "android_kernel_cyanogen_msm8916",
+    "fixed_hash": "be75e07b87493591e466ee44633d108cfc42343d",
+    "buggy_hash": "f4832cc61f58b8fa40841e1d07133eb7a18ca4a2",
+    "commit_msg": "Merge msm mdss Fix possible integer overflow"
+  },
+  {
+    "repo_url": "https://github.com/slact/ngx_lua_ipc.git",
+    "repo_name": "ngx_lua_ipc",
+    "fixed_hash": "dd6a8a4e3f017619d62b5846a6ee9d9b84059ebf",
+    "buggy_hash": "f4b90cd11986dd1b77379e3aa97ab48171be6cb0",
+    "commit_msg": "fix integer overflow errors for alerts > 65K"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "4851bdf3b3ffb7603d04859b895b5f2b4f6646c7",
+    "buggy_hash": "f4c2a112b50323aa47f43359560d58e299202cd4",
+    "commit_msg": "Fix additional cases of possible signed integer overflow especially with regard to negation."
+  },
+  {
+    "repo_url": "https://github.com/bitcoin/bitcoin.git",
+    "repo_name": "bitcoin",
+    "fixed_hash": "c5e9e428a9198c8c4076f239b5eaa8dc95e7985b",
+    "buggy_hash": "f4db00f9a5482c91ae8a86c6e41e0ba61acf152b",
+    "commit_msg": "Merge #9693: Prevent integer overflow in ReadVarInt.  45f0961 Prevent integer overflow in ReadVarInt."
+  },
+  {
+    "repo_url": "https://github.com/ceph/jerasure.git",
+    "repo_name": "jerasure",
+    "fixed_hash": "96c76b89d661c163f65a014b8042c9354ccf7f31",
+    "buggy_hash": "f55106369a4c926c8d7995fbcf4c4f4799bcaa0a",
+    "commit_msg": "Resolve cppcheck Signed integer overflow error  The type of expression 1<<31 is signed int and this causes cppcheck to issue the following warning.  src/gf_w32.c:681"
+  },
+  {
+    "repo_url": "https://github.com/nitrogen-project/android_frameworks_av.git",
+    "repo_name": "android_frameworks_av",
+    "fixed_hash": "75fc3c4b8be74f8dd7e98a73ce31291ee88fe6d7",
+    "buggy_hash": "f5a56591c0c3c20a3675ecc1ddf2cb6e730a629f",
+    "commit_msg": "DO NOT MERGE - stagefright: fix integer overflow error am: f4f36a0a31 -s ours am: 4efaa1bca7 am: ac9dd1421d am: 4f4d793ecb -s ours am: b017233d05 am: 26cf54f35a am: b278cb0afd am: fbab974cd3 -s ours am: 9f3de40494 am: f5a56591c0  Change-Id: I5b2780e0e7102f6ac04dc2a21a3d6ca8aede41bb"
+  },
+  {
+    "repo_url": "https://github.com/apache/kudu.git",
+    "repo_name": "kudu",
+    "fixed_hash": "b22bd33582e746702c7da16f1ae96687653beb69",
+    "buggy_hash": "f6edcbac28c5cc7ca01f17832c201e75f34faea4",
+    "commit_msg": "KUDU-1933. consensus: Avoid and repair integer overflow in log index  We observed a crash on a long-running master server that looked like the following:   F0308 00:25:53.568773 7655 log_index.cc:171"
+  },
+  {
+    "repo_url": "https://github.com/stsp/dosemu2.git",
+    "repo_name": "dosemu2",
+    "fixed_hash": "511febf5337670dc56e57eff7ca9bd4eeaee4e76",
+    "buggy_hash": "f7712515414c40819e02e07b0cbe3272dc81c147",
+    "commit_msg": "mouse: fix integer overflow on coords scaling"
+  },
+  {
+    "repo_url": "https://github.com/XanClic/qemu.git",
+    "repo_name": "qemu",
+    "fixed_hash": "86d1bd70987cd11d85d01f52aa5824c63d910471",
+    "buggy_hash": "f82c5b17ea85d8f432069a4afd6cbdb65d9d8a66",
+    "commit_msg": "block/parallels: Avoid overflows  Change the types of variables in allocate_clusters"
+  },
+  {
+    "repo_url": "https://github.com/linux-sunxi/linux-sunxi.git",
+    "repo_name": "linux-sunxi",
+    "fixed_hash": "fe8e12b5032536d37751c47e1c0446f17e974e5c",
+    "buggy_hash": "f9799ad21b5e4a41633f54dfab407ebb37abbd8a",
+    "commit_msg": "Merge branch for-linus-4.11 of git://git.kernel.org/pub/scm/linux/kernel/git/mason/linux-btrfs  Pull btrfs fixes from Chris Mason:  We have three small fixes queued up in my for-linus-4.11 branch  * for-linus-4.11 of git://git.kernel.org/pub/scm/linux/kernel/git/mason/linux-btrfs:  Btrfs: fix an integer overflow check  btrfs: Change qgroup_meta_rsv to 64bit  Btrfs: bring back repair during read"
+  },
+  {
+    "repo_url": "https://github.com/zhenxiao/presto.git",
+    "repo_name": "presto",
+    "fixed_hash": "ed7680d40c7ad9a03acfe6eeb4362e1401320d38",
+    "buggy_hash": "f9a287cca14bd3bda2a0e12d348c0771c3225767",
+    "commit_msg": "Prevent integer overflow calculating QueryQueue permits  Detect and report integer overflow when QueryQueues permits cannot be calculated. Not using Math.addExact"
+  },
+  {
+    "repo_url": "https://github.com/echronos/echronos.git",
+    "repo_name": "echronos",
+    "fixed_hash": "f0da41da58a84afa2c49ae017dcf40af0256c414",
+    "buggy_hash": "fad08bc4ea6be61fe6a46da00eb691fba7357e21",
+    "commit_msg": "- fix static code analysis failures regarding tick types  Expressions involving a TicksAbsolute value generally evaluate to a value of that same type.  So far such expressions were often assigned to TicksRelative variables with a smaller value space which the static analyzer does not accept.  To resolve these issues the expressions are now cast to type TicksRelative explicitly after checking that they cannot result in integer overflows."
+  },
+  {
+    "repo_url": "https://github.com/mifl/android_kernel_qcom_msm-3.18.git",
+    "repo_name": "android_kernel_qcom_msm-3.18",
+    "fixed_hash": "cc53fa4afffe6f8b62853f2afc7c8085a59ba409",
+    "buggy_hash": "fb5fcedeaba8ae06914f75bd9cb77b633e67a3a9",
+    "commit_msg": "qcrypto: protect potential integer overflow.  CVE-2016-10230  Adding user passed parameters without check might lead to Integer overflow and unpredictable system behaviour.  Change-Id: I78c73e6b74c1c73a9f1c5024aa2a7ff2ccd51372 Signed-off-by: Neeraj Soni <neersoni@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/kbc-developers/android_kernel_samsung_klte.git",
+    "repo_name": "android_kernel_samsung_klte",
+    "fixed_hash": "9d021f12ebca699672891f8ee87e43a5db4aca98",
+    "buggy_hash": "fb83700777666b755147221b35a24a813d3405e9",
+    "commit_msg": "msm: camera: Restructure data handling to be more robust  Use dynamic array allocation instead of static array to prevent stack overflow. User-supplied number of bytes may result in integer overflow. To fix this we check that the num_byte isnt above 8K size.  CRs-Fixed: 1060554 Change-Id: I9b05b846e5cc3a62b1a0a67be529f09abc764796 Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org>  Conflicts:  drivers/media/platform/msm/camera_v2/sensor/io/msm_camera_qup_i2c.c  include/media/msm_cam_sensor.h"
+  },
+  {
+    "repo_url": "https://github.com/jon-turney/xorg-server.git",
+    "repo_name": "xorg-server",
+    "fixed_hash": "7c4fab2f1f411b6f7d7adc76271fca7c29365ac4",
+    "buggy_hash": "fbb46e0be897ffe78b731a2456673b4cbb73b2be",
+    "commit_msg": "render: Fix out of boundary heap access  ProcRenderCreateRadialGradient and ProcRenderCreateConicalGradient must be protected against an integer overflow during length check. This is already included in ProcRenderCreateLinearGradient since the fix for CVE-2008-2362.  This can only be successfully exploited on a 32 bit system for an out of boundary read later on. Validated by using ASAN.  Reviewed-by: Adam Jackson <ajax@redhat.com> "
+  },
+  {
+    "repo_url": "https://github.com/mjibson/cockroach.git",
+    "repo_name": "cockroach",
+    "fixed_hash": "9e66c8686377d827cd1b753f4a365247b10548a1",
+    "buggy_hash": "fc0be2c4bcb59454985c4c7f5bdf3de8484b7104",
+    "commit_msg": "sql: detect integer overflow  Fixes #14780 Fixes #10408"
+  },
+  {
+    "repo_url": "https://github.com/mackyle/sqlite.git",
+    "repo_name": "sqlite",
+    "fixed_hash": "0d4924d5309ea00af166807e56837a59f83a6043",
+    "buggy_hash": "fc2522658e224849a09681ecf32af224f3e95dee",
+    "commit_msg": "Avoid signed integer overflow when converting oversized in-line integer widths and precisions in printf"
+  },
+  {
+    "repo_url": "https://github.com/tuliom/glibc.git",
+    "repo_name": "glibc",
+    "fixed_hash": "012adb33827608d3b78e3832a1948b468b549946",
+    "buggy_hash": "fc843f6e48737d3d6690c5cf355d9719274efee1",
+    "commit_msg": "Fix BZ #17269 -- _IO_wstr_overflow integer overflow  "
+  },
+  {
+    "repo_url": "https://github.com/DespairFactor/marlin.git",
+    "repo_name": "marlin",
+    "fixed_hash": "d3d4c8b432fbce5e441f6f62f2af59056d9ca3df",
+    "buggy_hash": "fd30110abd9cac2fe630f1584911c4e725d1589c",
+    "commit_msg": "msm: camera: Restructure data handling to be more robust  Use dynamic array allocation instead of static array to prevent stack overflow. User-supplied number of bytes may result in integer overflow. To fix this we check that the num_byte isnt above 8K size.  Bug: 30559423 CRs-Fixed: 1060554 Change-Id: I9b05b846e5cc3a62b1a0a67be529f09abc764796 Signed-off-by: VijayaKumar T M <vtmuni@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/freak07/Kirisakura_Pixel.git",
+    "repo_name": "Kirisakura_Pixel",
+    "fixed_hash": "f538ae19f4cb7d515b8a78fb89a4f5bdca2eefd4",
+    "buggy_hash": "fdb09fcdb5eede7ea63cc6b79f661473ee435ed1",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Bug: 33544431 CRs-Fixed: 1103089 Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org> Signed-off-by: Biswajit Paul <biswajitpaul@codeaurora.org> Signed-off-by: Steve Pfetsch <spfetsch@google.com> "
+  },
+  {
+    "repo_url": "https://github.com/codeaurora-unofficial/kernel-msm-3.10.git",
+    "repo_name": "kernel-msm-3.10",
+    "fixed_hash": "bb110928ba85ae1407b1d65f6513c4c069a7603e",
+    "buggy_hash": "fe1f4ba014de866b2b950c1ca28a0d9bfcd1c0be",
+    "commit_msg": "crypto: msm: check integer overflow on total data len in qcedev.c  qcedev_vbuf_ablk_cipher will calculate total data length. It starts with the value of areq->cipher_op_req.byteoffset which is controlled by the user. Make change to check if this total data length has integer overflow issue in qcedev_check_cipher_params.  Change-Id: Ice42dca6d47eb8febfe8a34e566c69e4799fab57 Signed-off-by: Zhen Kong <zkong@codeaurora.org>"
+  },
+  {
+    "repo_url": "https://github.com/grpc/grpc.git",
+    "repo_name": "grpc",
+    "fixed_hash": "c96c0f94f964eab1b57b7f6081e3538cd611e963",
+    "buggy_hash": "feaee850bf82251f3797749f9b2ef4580b1ba002",
+    "commit_msg": "Remove DEBUG code that is itself buggy"
+  }
+]

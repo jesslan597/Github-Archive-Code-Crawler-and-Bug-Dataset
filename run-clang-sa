@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ -d "build" && -f "CMakeLists.txt"  ]]; then
+  cd build
+fi
+
+scan-build -o "$PWD-clang-sa-out" make -j4
+
+if [[ -d "build" && -f "CMakeLists.txt"  ]]; then
+  cd ..
+fi
